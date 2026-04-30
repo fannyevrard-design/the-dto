@@ -82,24 +82,6 @@ export const Concept = () => {
           </p>
         </div>
 
-        {/* 3 reminders */}
-        <div className="mt-20 border-t border-dto-soft/10 pt-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
-            {(["yes", "no", "maybe"] as const).map((k, i) => (
-              <DtoReveal key={k} delay={i * 100}>
-                <div className="px-2">
-                  <h4
-                    className={`font-editorial ${k === "maybe" ? "italic text-sage" : "text-dto-text"}`}
-                    style={{ fontSize: 36, fontWeight: 300, lineHeight: 1.05 }}
-                  >
-                    {t.concept[k].word}
-                  </h4>
-                  <p className="text-soft mt-3 text-[14px] leading-[1.7]">{t.concept[k].desc}</p>
-                </div>
-              </DtoReveal>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
