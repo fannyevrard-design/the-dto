@@ -6,7 +6,7 @@ export const Hero = () => {
   const { t, openWaitlist, lang } = useLang();
 
   return (
-    <section id="top" className="relative" style={{ paddingTop: 60, paddingBottom: 100 }}>
+    <section id="top" className="relative" style={{ paddingTop: 60, paddingBottom: 40 }}>
       <div className="mx-auto" style={{ maxWidth: 1240, padding: "0 32px" }}>
         {/* Mosaic */}
         <div
