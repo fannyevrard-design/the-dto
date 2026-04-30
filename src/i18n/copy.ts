@@ -167,6 +167,6 @@ export const COPY = {
       sub: "Montréal · 2026",
     },
   },
-} as const;
+};
 
 export type CopyShape = typeof COPY["fr"];
