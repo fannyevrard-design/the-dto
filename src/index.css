@@ -2,104 +2,163 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* DatsTheOne Design System
+   Palette stricte (HSL):
+   #0F1319 = 215 24% 8%   (dto-bg)
+   #1A1F27 = 215 19% 13%  (dto-bg-elev)
+   #1C1B1A = 30 6% 11%    (dto-placeholder)
+   #FFFFFF = 0 0% 100%    (dto-text)
+   #E8E4DE = 36 17% 89%   (dto-text-soft)
+   #AAB09F = 84 7% 66%    (dto-sage)
+   #5D6350 = 84 11% 35%   (dto-sage-deep)
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 215 24% 8%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 215 19% 13%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 215 24% 8%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 36 17% 89%;
+    --primary-foreground: 215 24% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 215 19% 13%;
+    --secondary-foreground: 36 17% 89%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 215 19% 13%;
+    --muted-foreground: 36 17% 89%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 84 7% 66%;
+    --accent-foreground: 215 24% 8%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 36 17% 89%;
+    --input: 36 17% 89%;
+    --ring: 84 7% 66%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* DTO tokens */
+    --dto-bg: 215 24% 8%;
+    --dto-bg-elev: 215 19% 13%;
+    --dto-placeholder: 30 6% 11%;
+    --dto-text: 0 0% 100%;
+    --dto-text-soft: 36 17% 89%;
+    --dto-sage: 84 7% 66%;
+    --dto-sage-deep: 84 11% 35%;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--dto-text-soft) / 0.1);
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--dto-bg));
+    color: hsl(var(--dto-text));
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: hsl(var(--dto-sage) / 0.4);
+    color: hsl(var(--dto-text));
   }
 }
+
+@layer utilities {
+  .font-editorial { font-family: 'Cormorant Garamond', Georgia, serif; }
+  .font-body { font-family: 'Manrope', system-ui, sans-serif; }
+  .font-mono-ui { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+  .text-soft { color: hsl(var(--dto-text-soft) / 0.78); }
+  .text-muted-soft { color: hsl(var(--dto-text-soft) / 0.55); }
+  .text-sage { color: hsl(var(--dto-sage)); }
+
+  .border-soft { border-color: hsl(var(--dto-text-soft) / 0.1); }
+  .border-sage-soft { border-color: hsl(var(--dto-sage) / 0.35); }
+
+  .kicker {
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: hsl(var(--dto-sage));
+  }
+
+  .container-dto {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @media (max-width: 767px) {
+    .container-dto {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  .section-pad {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  @media (min-width: 1024px) {
+    .section-pad {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .section-pad {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+
+  .photo-stripes {
+    background-color: hsl(var(--dto-placeholder));
+    background-image:
+      repeating-linear-gradient(135deg, rgba(232,228,222,0.045) 0 2px, transparent 2px 14px),
+      repeating-linear-gradient(45deg, rgba(170,176,159,0.04) 0 2px, transparent 2px 18px),
+      radial-gradient(ellipse at 50% 60%, transparent 0%, rgba(0,0,0,0.45) 100%);
+  }
+}
+
+@keyframes dto-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes dto-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dto-reveal {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dto-rise { animation: dto-rise 500ms cubic-bezier(.2,.7,.2,1) both; }
+.dto-fade { animation: dto-fade 400ms ease both; }
+.dto-reveal-in { animation: dto-reveal 700ms cubic-bezier(.2,.7,.2,1) both; }
