@@ -1,6 +1,9 @@
 import { useLang } from "@/i18n/LangContext";
 import { DtoPhoto } from "@/components/DtoPhoto";
 import { DtoReveal } from "@/components/DtoReveal";
+import { Hand, MessagesSquare, UserSearch, Sparkles, Hourglass, HelpCircle } from "lucide-react";
+
+const POINT_ICONS = [Hand, MessagesSquare, UserSearch, Sparkles, Hourglass, HelpCircle];
 
 export const Diff = () => {
   const { t } = useLang();
@@ -29,17 +32,26 @@ export const Diff = () => {
           </DtoReveal>
 
           <ul className="mt-10 divide-y divide-dto-soft/10 border-y border-dto-soft/10">
-            {t.diff.points.map(([a, b], i) => (
-              <DtoReveal key={i} as="li" delay={i * 60}>
-                <div className="flex items-baseline gap-5 py-4">
-                  <span className="font-editorial italic text-sage text-[18px] w-8 shrink-0">0{i + 1}</span>
-                  <p className="text-soft text-[17px]">
-                    <span className="text-muted-soft">{a}</span>{" "}
-                    <span className="text-dto-text">{b}</span>
-                  </p>
-                </div>
-              </DtoReveal>
-            ))}
+            {t.diff.points.map(([a, b], i) => {
+              const Icon = POINT_ICONS[i] ?? HelpCircle;
+              return (
+                <DtoReveal key={i} as="li" delay={i * 60}>
+                  <div className="flex items-center gap-5 py-4">
+                    <span
+                      className="grid place-items-center w-9 h-9 shrink-0 rounded-full"
+                      style={{ border: "1px solid hsl(var(--dto-sage) / 0.4)", color: "hsl(var(--dto-sage))" }}
+                      aria-hidden
+                    >
+                      <Icon size={16} strokeWidth={1.5} />
+                    </span>
+                    <p className="text-soft text-[17px]">
+                      <span className="text-muted-soft">{a}</span>{" "}
+                      <span className="text-dto-text">{b}</span>
+                    </p>
+                  </div>
+                </DtoReveal>
+              );
+            })}
           </ul>
 
           <DtoReveal delay={200}>
