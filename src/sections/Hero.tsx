@@ -6,16 +6,15 @@ export const Hero = () => {
   const { t, openWaitlist, lang } = useLang();
 
   return (
-    <section id="top" className="relative" style={{ paddingTop: 60, paddingBottom: 40 }}>
+    <section id="top" className="relative" style={{ paddingTop: 60, paddingBottom: 0 }}>
       <div className="mx-auto" style={{ maxWidth: 1240, padding: "0 32px" }}>
         {/* Mosaic */}
         <div
           className="hidden md:grid"
           style={{
             gridTemplateColumns: "0.9fr 1.4fr 0.9fr",
-            gridTemplateRows: "1fr auto 1fr",
+            gridTemplateRows: "auto auto auto",
             gap: 16,
-            minHeight: "78vh",
           }}
         >
           {/* (1,1) Marc */}
