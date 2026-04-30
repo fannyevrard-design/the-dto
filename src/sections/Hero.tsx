@@ -130,15 +130,6 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Slogan under mosaic */}
-        <DtoReveal delay={200}>
-          <p
-            className="text-center font-editorial italic text-sage"
-            style={{ marginTop: 20, fontSize: 18, lineHeight: 1.5 }}
-          >
-            "{t.hero.slogan}"
-          </p>
-        </DtoReveal>
       </div>
     </section>
   );
