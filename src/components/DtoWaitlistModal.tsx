@@ -135,10 +135,11 @@ export const DtoWaitlistModal = () => {
               {error && <div className="text-[12px] text-dto-sage">{error}</div>}
               <button
                 type="submit"
-                className="mt-1 rounded-[10px] py-3 px-5 text-[14px] font-semibold tracking-wide transition-transform duration-200 hover:-translate-y-[1px]"
+                disabled={submitting}
+                className="mt-1 rounded-[10px] py-3 px-5 text-[14px] font-semibold tracking-wide transition-transform duration-200 hover:-translate-y-[1px] disabled:opacity-60 disabled:cursor-not-allowed"
                 style={{ background: "hsl(var(--dto-text-soft))", color: "hsl(var(--dto-bg))" }}
               >
-                {t.modal.button}
+                {submitting ? "…" : t.modal.button}
               </button>
               <p className="text-muted-soft text-[11px] mt-2">{t.modal.small}</p>
             </form>
