@@ -131,7 +131,7 @@ export const COPY = {
       eyebrow: "Features",
       title: "A clearer, more human, more intentional approach.",
       items: [
-        { n: "01", t: "Richer profiles", d: "Profiles designed to go beyond a few photos and a catchy line." },
+        { n: "01", t: "More detailed profiles", d: "Profiles designed to go beyond just a few photos and a catchphrase." },
         { n: "02", t: "More nuanced decisions", d: "Because connection is not always a simple yes or no." },
         { n: "03", t: "Technology at the service of people", d: "AI can help create clarity, but it should never replace real human connections." },
       ],
