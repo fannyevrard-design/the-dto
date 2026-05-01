@@ -23,7 +23,7 @@ export const Hero = () => {
         >
           {/* (1,1) Marc */}
           <DtoReveal delay={0} className="self-end">
-            <DtoPhoto label="marc, 56" ratio="3/4" />
+            <DtoPhoto label="marc, 56" ratio="3/4" src={heroMarc} alt="Marc, 56" objectPosition="center 30%" />
           </DtoReveal>
 
           {/* center block spans 3 rows */}
@@ -76,17 +76,17 @@ export const Hero = () => {
 
           {/* (1,3) Hélène */}
           <DtoReveal delay={240} className="self-start">
-            <DtoPhoto label={lang === "fr" ? "hélène, 51" : "helene, 51"} ratio="3/4" />
+            <DtoPhoto label={lang === "fr" ? "hélène, 51" : "helene, 51"} ratio="3/4" src={heroHelene} alt="Hélène, 51" objectPosition="center 25%" />
           </DtoReveal>
 
           {/* (3,1) Sophie */}
           <DtoReveal delay={360} className="self-start">
-            <DtoPhoto label="sophie, 48" ratio="4/3" />
+            <DtoPhoto label="sophie, 48" ratio="4/3" src={heroSophie} alt="Sophie, 48" objectPosition="center 30%" />
           </DtoReveal>
 
           {/* (3,3) Daniel */}
           <DtoReveal delay={480} className="self-end">
-            <DtoPhoto label="daniel, 62" ratio="4/3" />
+            <DtoPhoto label="daniel, 62" ratio="4/3" src={heroDaniel} alt="Daniel, 62" objectPosition="center 30%" />
           </DtoReveal>
         </div>
 
@@ -126,10 +126,10 @@ export const Hero = () => {
           </DtoReveal>
 
           <div className="grid grid-cols-2 gap-3 mt-10 w-full">
-            <DtoPhoto label="marc, 56" ratio="3/4" />
-            <DtoPhoto label={lang === "fr" ? "hélène, 51" : "helene, 51"} ratio="3/4" />
-            <DtoPhoto label="sophie, 48" ratio="4/3" />
-            <DtoPhoto label="daniel, 62" ratio="4/3" />
+            <DtoPhoto label="marc, 56" ratio="3/4" src={heroMarc} alt="Marc, 56" objectPosition="center 30%" />
+            <DtoPhoto label={lang === "fr" ? "hélène, 51" : "helene, 51"} ratio="3/4" src={heroHelene} alt="Hélène, 51" objectPosition="center 25%" />
+            <DtoPhoto label="sophie, 48" ratio="4/3" src={heroSophie} alt="Sophie, 48" objectPosition="center 30%" />
+            <DtoPhoto label="daniel, 62" ratio="4/3" src={heroDaniel} alt="Daniel, 62" objectPosition="center 30%" />
           </div>
         </div>
 
