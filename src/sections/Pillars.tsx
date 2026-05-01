@@ -7,9 +7,9 @@ export const Pillars = () => {
   const { t } = useLang();
 
   const ICONS = [
-    <div key="i1" className="size-2 rounded-full bg-sage" />,
-    <div key="i2" className="size-3 border border-sage rotate-45" />,
-    <div key="i3" className="w-4 h-px bg-sage" />,
+    <img key="i1" src={dtoSigle} alt="" className="h-4 w-auto" />,
+    <img key="i2" src={dtoSigle} alt="" className="h-4 w-auto" />,
+    <img key="i3" src={dtoSigle} alt="" className="h-4 w-auto" />,
   ];
 
   return (
