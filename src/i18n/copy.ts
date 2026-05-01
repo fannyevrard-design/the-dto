@@ -4,7 +4,7 @@ export const COPY = {
   fr: {
     nav: { concept: "Concept", mission: "Mission", features: "Fonctionnalités", cta: "Télécharger l'application" },
     hero: {
-      badge: "Pensé pour 40+",
+      badge: "Pensé pour les 40+",
       titleA: "",
       titleB: "Vous méritez mieux qu'un simple swipe.",
       subtitle: "Les vraies connexions demandent du temps, de la nuance et de l'intention.",
@@ -40,7 +40,7 @@ export const COPY = {
       p1: "À cette étape de la vie, on ne cherche pas seulement un profil. On cherche une présence, une énergie, une vraie compatibilité.",
       p2: "On a déjà vécu, aimé, appris, parfois recommencé. On sait mieux ce qu'on veut. Et surtout, on sait ce qu'on ne veut plus.",
       p3: "Parce qu'après 40 ans, une rencontre n'est pas toujours un coup de foudre instantané. Parfois, c'est une curiosité qui grandit.",
-      badge: "Pensé pour 40+",
+      badge: "Pensé pour les 40+",
     },
     pillars: {
       eyebrow: "- Fonctionnalités",
