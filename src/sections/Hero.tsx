@@ -71,7 +71,11 @@ export const Hero = () => {
             >
               {t.hero.cta} →
             </button>
-            <p className="text-muted-soft text-[12px] mt-4 max-w-[360px]">{t.hero.micro}</p>
+            <div className="mt-4 flex items-center gap-2 text-[12px] text-dto-soft">
+              <span aria-hidden style={{ color: "hsl(var(--dto-sage))", letterSpacing: "1px" }}>★★★★★</span>
+              <span>Déjà + de 1000 inscrits <span className="italic text-sage">(Version premium)</span></span>
+            </div>
+            <p className="text-muted-soft text-[12px] mt-2 max-w-[360px]">{t.hero.micro}</p>
           </DtoReveal>
 
           {/* (1,3) Hélène */}
@@ -122,7 +126,11 @@ export const Hero = () => {
             >
               {t.hero.cta} →
             </button>
-            <p className="text-muted-soft text-[12px] mt-3">{t.hero.micro}</p>
+            <div className="mt-3 flex items-center justify-center gap-2 text-[12px] text-dto-soft">
+              <span aria-hidden style={{ color: "hsl(var(--dto-sage))", letterSpacing: "1px" }}>★★★★★</span>
+              <span>Déjà + de 1000 inscrits <span className="italic text-sage">(Version premium)</span></span>
+            </div>
+            <p className="text-muted-soft text-[12px] mt-2">{t.hero.micro}</p>
           </DtoReveal>
 
           <div className="grid grid-cols-2 gap-3 mt-10 w-full">
