@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useLang } from "@/i18n/LangContext";
 import dtoLogo from "@/assets/dto-logo.svg";
 
@@ -33,7 +34,7 @@ export const Footer = () => {
           </div>
           <div>
             <div className="mb-4 font-mono-ui text-[11px] uppercase tracking-[0.18em]" style={{ color: ink }}>{t.footer.legal}</div>
-            <a href="#" className="block text-[14px] transition-opacity hover:opacity-70" style={{ color: ink }}>{t.footer.privacy}</a>
+            <Link to={t === undefined ? "/privacy" : "/politique-de-confidentialite"} className="block text-[14px] transition-opacity hover:opacity-70" style={{ color: ink }}>{t.footer.privacy}</Link>
           </div>
         </div>
 
