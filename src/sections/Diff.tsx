@@ -23,7 +23,19 @@ export const Diff = () => {
       <div className="container-dto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-[100px] items-center">
         {/* Left: photo collage (moves below text on mobile) */}
         <DtoReveal className="order-2 lg:order-1">
-          <div className="grid grid-cols-2 gap-4">
+          {/* Mobile: stacked playing-card style */}
+          <div className="lg:hidden">
+            <DtoStackedCards
+              cards={[
+                { src: diffClaire, alt: "Claire, 54", label: "Sports de plein air", objectPosition: "center 25%" },
+                { src: diffRachid, alt: "Rachid, 58", label: "Course à pied", objectPosition: "center 30%" },
+                { src: diffPaul, alt: "Paul, 49", label: "J'ai un chien", objectPosition: "center 25%" },
+                { src: diffAnna, alt: "Anna, 47", label: "Voyages", objectPosition: "center 20%" },
+              ]}
+            />
+          </div>
+          {/* Desktop: original 2x2 grid */}
+          <div className="hidden lg:grid grid-cols-2 gap-4">
             <DtoPhoto label="" ratio="3/4" className="translate-y-6" src={diffClaire} alt="Claire, 54" objectPosition="center 25%" />
             <DtoPhoto label="" ratio="3/4" src={diffRachid} alt="Rachid, 58" objectPosition="center 30%" />
             <DtoPhoto label="" ratio="4/5" src={diffPaul} alt="Paul, 49" objectPosition="center 25%" />
