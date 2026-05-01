@@ -28,7 +28,7 @@ export const Diff = () => {
         {/* Right: text + numbered points */}
         <div>
           <DtoReveal>
-            <div className="kicker mb-5">— {t.diff.eyebrow}</div>
+            <div className="kicker mb-5">{t.diff.eyebrow}</div>
             <h2 className="font-editorial text-dto-text" style={{ fontSize: "clamp(36px, 4.6vw, 60px)", lineHeight: 1.05, fontWeight: 300, letterSpacing: "-0.01em" }}>
               {t.diff.title}
             </h2>

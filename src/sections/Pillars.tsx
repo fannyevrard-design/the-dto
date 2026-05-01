@@ -10,7 +10,7 @@ export const Pillars = () => {
     <section id="features" className="section-pad" style={{ background: "hsl(var(--dto-bg-elev))" }}>
       <div className="container-dto">
         <DtoReveal>
-          <div className="kicker mb-5">— {t.pillars.eyebrow}</div>
+          <div className="kicker mb-5">{t.pillars.eyebrow}</div>
           <h2 className="font-editorial text-dto-text max-w-[820px]" style={{ fontSize: "clamp(36px, 4.6vw, 60px)", lineHeight: 1.05, fontWeight: 300, letterSpacing: "-0.01em" }}>
             {t.pillars.title}
           </h2>
