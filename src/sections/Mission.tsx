@@ -1,6 +1,7 @@
 import { useLang } from "@/i18n/LangContext";
 import { DtoPhoto } from "@/components/DtoPhoto";
 import { DtoReveal } from "@/components/DtoReveal";
+import missionMargauxDavid from "@/assets/mission-margaux-david.png";
 
 export const Mission = () => {
   const { t } = useLang();
@@ -27,7 +28,7 @@ export const Mission = () => {
 
         <DtoReveal delay={150}>
           <div className="relative">
-            <DtoPhoto label="◇ Margaux, 53 & David, 48" ratio="4/5" />
+            <DtoPhoto label="Margaux, 53 & David, 48" ratio="4/5" src={missionMargauxDavid} alt="Margaux et David" objectPosition="center 25%" />
             <span
               className="absolute"
               style={{
