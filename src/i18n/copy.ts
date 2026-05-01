@@ -13,7 +13,7 @@ export const COPY = {
       micro: "L'application arrive bientôt. Soyez parmi les premiers informés.",
     },
     diff: {
-      eyebrow: "-L'AUTHENTICITÉ",
+      eyebrow: "- L'Authenticité -",
       title: "L'humain au cœur de nos rencontres.",
       text: "Une application de rencontre pour celles et ceux qui ne veulent plus consommer les relations comme un catalogue.",
       points: [
@@ -27,7 +27,7 @@ export const COPY = {
       close: "Parce qu'à cette étape de la vie, une rencontre mérite mieux qu'un oui ou un non précipité.",
     },
     concept: {
-      eyebrow: "Concept",
+      eyebrow: "- Laisser la place à votre histoire - ",
       title: "On a tous nos bagages de vie.",
       text: "Avec l'âge, les histoires sont plus riches, les attentes plus claires, les décisions plus nuancées. DatsTheOne laisse de la place à cette réalité.",
       yes: { word: "Oui.", desc: "Quand l'élan est évident." },
