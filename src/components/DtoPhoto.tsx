@@ -44,12 +44,14 @@ export const DtoPhoto = ({ label, ratio = "3/4", className = "", style, src, alt
           style={{ background: "linear-gradient(to top, rgba(15,19,25,0.55), rgba(15,19,25,0))" }}
         />
       )}
-      <span
-        className="absolute bottom-3 left-3 font-mono-ui text-[11px] tracking-wide"
-        style={{ color: "rgba(232,228,222,0.78)" }}
-      >
-        ◇ {label}
-      </span>
+      {label && (
+        <span
+          className="absolute bottom-3 left-3 font-mono-ui text-[11px] tracking-wide"
+          style={{ color: "rgba(232,228,222,0.78)" }}
+        >
+          ◇ {label}
+        </span>
+      )}
     </div>
   );
 };
