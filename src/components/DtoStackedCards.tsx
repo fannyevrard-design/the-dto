@@ -93,20 +93,6 @@ export const DtoStackedCards = ({ cards, className = "" }: Props) => {
                   "radial-gradient(ellipse at center, rgba(15,19,25,0) 50%, rgba(15,19,25,0.45) 100%)",
               }}
             />
-            {card.label && (
-              <span
-                className="absolute top-4 right-4 px-3 py-1.5 rounded-full text-[12px] font-medium"
-                style={{
-                  background: "hsl(var(--dto-sage))",
-                  color: "hsl(var(--dto-bg))",
-                  writingMode: "vertical-rl",
-                  textOrientation: "mixed",
-                  letterSpacing: "0.02em",
-                }}
-              >
-                {card.label}
-              </span>
-            )}
           </div>
         );
       })}
