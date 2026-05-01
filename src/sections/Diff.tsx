@@ -46,13 +46,9 @@ export const Diff = () => {
               return (
                 <DtoReveal key={i} as="li" delay={i * 60}>
                   <div className="flex items-center gap-5 py-4">
-                    <span
-                      className="grid place-items-center w-9 h-9 shrink-0 rounded-full"
-                      style={{ border: "1px solid hsl(var(--dto-sage) / 0.4)" }}
-                      aria-hidden
-                    >
+                    <span className="grid place-items-center w-10 h-10 shrink-0" aria-hidden>
                       <span
-                        className="block w-4 h-4"
+                        className="block w-7 h-7"
                         style={{
                           backgroundColor: "hsl(var(--dto-sage))",
                           WebkitMaskImage: `url(${iconSrc})`,
