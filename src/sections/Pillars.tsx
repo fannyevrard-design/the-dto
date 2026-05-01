@@ -40,7 +40,7 @@ export const Pillars = () => {
         {/* Ecosystem */}
         <div className="mt-20 relative w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left feature */}
-          <DtoReveal delay={120} className="lg:col-span-3 z-10">
+          <DtoReveal delay={120} className="lg:col-span-3 z-10 order-2 lg:order-none">
             <div className="relative">
               <article
                 className="p-7 rounded-2xl transition-all duration-500 hover:-translate-y-[3px]"
@@ -80,7 +80,7 @@ export const Pillars = () => {
           </DtoReveal>
 
           {/* Center: phone mockup */}
-          <DtoReveal delay={0} className="lg:col-span-6 relative flex justify-center">
+          <DtoReveal delay={0} className="lg:col-span-6 relative flex justify-center order-1 lg:order-none">
             <div className="relative">
               {/* Glow */}
               <div
