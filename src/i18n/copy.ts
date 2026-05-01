@@ -99,7 +99,7 @@ export const COPY = {
     social: { signups: "Already 500+ signups" },
     diff: {
       eyebrow: "The premise",
-      title: "Putting people back at the heart of dating.",
+      title: "Placing people back at the heart of dating.",
       text: "A dating app for those who no longer want to consume relationships like a catalogue.",
       points: [
         ["Less", "automatic swiping."],
@@ -122,7 +122,7 @@ export const COPY = {
     mission: {
       eyebrow: "​",
       title: "​More context for more meaningful connections.",
-      p1: "Born from a simple idea: finding love today feels a lot like finding the right job — and that's more than just a metaphor.",
+      p1: "Born from a simple idea: finding love today feels a lot like finding the right job - and that's more than just a metaphor.",
       p2: "DatsTheOne reimagines online dating by giving people the information they need to recognize the right person, make more informed choices, and connect with confidence and authenticity.",
       p3: "Because we believe real connections start with clarity.",
       badge: "Built for 40+",
@@ -133,7 +133,7 @@ export const COPY = {
       items: [
         { n: "01", t: "Richer profiles", d: "Profiles designed to go beyond a few photos and a catchy line." },
         { n: "02", t: "More nuanced decisions", d: "Because connection is not always a simple yes or no." },
-        { n: "03", t: "Technology in service of people", d: "AI can help create clarity, but it should never replace real human connection." },
+        { n: "03", t: "Technology at the service of people", d: "AI can help create clarity, but it should never replace real human connections." },
       ],
     },
     waitlist: {
