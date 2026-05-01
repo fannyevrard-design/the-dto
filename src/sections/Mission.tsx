@@ -7,9 +7,40 @@ export const Mission = () => {
   const { t, openWaitlist } = useLang();
   return (
     <section id="mission" className="section-pad">
-      <div className="container-dto grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] items-center gap-16 lg:gap-[100px]">
-        <div>
-          <DtoReveal>
+      <div className="container-dto grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] items-center gap-10 lg:gap-[100px]">
+        <DtoReveal className="order-1 lg:hidden">
+          <div className="kicker mb-5">{t.mission.eyebrow}</div>
+          <h2 className="font-editorial text-dto-text" style={{ fontSize: "clamp(36px, 4.6vw, 60px)", lineHeight: 1.05, fontWeight: 300, letterSpacing: "-0.01em" }}>
+            {t.mission.title}
+          </h2>
+        </DtoReveal>
+
+        <DtoReveal delay={150} className="order-2 lg:order-2">
+          <div className="relative">
+            <DtoPhoto label="Margaux, 52 & David, 58" ratio="4/5" src={missionMargauxDavid} alt="Margaux et David" objectPosition="center 25%" />
+            <span
+              className="absolute"
+              style={{
+                right: -24,
+                top: -24,
+                background: "hsl(var(--dto-sage))",
+                color: "hsl(var(--dto-bg))",
+                padding: "12px 18px",
+                borderRadius: 4,
+                fontFamily: "Manrope",
+                fontSize: 11,
+                fontWeight: 600,
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+              }}
+            >
+              {t.mission.badge}
+            </span>
+          </div>
+        </DtoReveal>
+
+        <div className="order-3 lg:order-1">
+          <DtoReveal className="hidden lg:block">
             <div className="kicker mb-5">{t.mission.eyebrow}</div>
             <h2 className="font-editorial text-dto-text" style={{ fontSize: "clamp(36px, 4.6vw, 60px)", lineHeight: 1.05, fontWeight: 300, letterSpacing: "-0.01em" }}>
               {t.mission.title}
@@ -42,30 +73,6 @@ export const Mission = () => {
             </div>
           </DtoReveal>
         </div>
-
-        <DtoReveal delay={150}>
-          <div className="relative">
-            <DtoPhoto label="Margaux, 52 & David, 58" ratio="4/5" src={missionMargauxDavid} alt="Margaux et David" objectPosition="center 25%" />
-            <span
-              className="absolute"
-              style={{
-                right: -24,
-                top: -24,
-                background: "hsl(var(--dto-sage))",
-                color: "hsl(var(--dto-bg))",
-                padding: "12px 18px",
-                borderRadius: 4,
-                fontFamily: "Manrope",
-                fontSize: 11,
-                fontWeight: 600,
-                letterSpacing: "0.18em",
-                textTransform: "uppercase",
-              }}
-            >
-              {t.mission.badge}
-            </span>
-          </div>
-        </DtoReveal>
       </div>
     </section>
   );
