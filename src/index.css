@@ -226,3 +226,30 @@
 @media (prefers-reduced-motion: reduce) {
   .dto-intro-svg path { animation: none; fill: hsl(var(--dto-text)); stroke: none; stroke-dashoffset: 0; }
 }
+
+/* Pillars phone logo draw animation (looping) */
+.dto-pillars-logo path {
+  fill: hsl(var(--dto-bg));
+  stroke: hsl(var(--dto-bg));
+  stroke-width: 0.6;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: dto-pillars-loop 6s ease-in-out infinite;
+}
+@keyframes dto-pillars-loop {
+  0%   { stroke-dashoffset: 400; fill: transparent; }
+  35%  { stroke-dashoffset: 0;   fill: transparent; }
+  50%  { stroke-dashoffset: 0;   fill: hsl(var(--dto-bg)); }
+  85%  { stroke-dashoffset: 0;   fill: hsl(var(--dto-bg)); }
+  100% { stroke-dashoffset: 400; fill: transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dto-pillars-logo path {
+    animation: none;
+    fill: hsl(var(--dto-bg));
+    stroke: none;
+    stroke-dashoffset: 0;
+  }
+}
