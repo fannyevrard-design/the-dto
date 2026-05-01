@@ -96,6 +96,7 @@ export const COPY = {
       cta: "Download the App",
       micro: "Pre-launch. Be part of the future.",
     },
+    social: { signups: "Already 500+ signups" },
     diff: {
       eyebrow: "The premise",
       title: "People at the heart of dating.",
