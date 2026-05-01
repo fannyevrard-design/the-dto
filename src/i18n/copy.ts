@@ -90,7 +90,7 @@ export const COPY = {
     hero: {
       badge: "Built for 40+",
       titleA: "",
-      titleB: " deserves more than a swipe.",
+      titleB: " You deserve more than a swipe.",
       subtitle: "Real connections take time, nuance, and intention.",
       slogan: "Find the right partner, at the right time, for the right reasons.",
       cta: "Download the App",
