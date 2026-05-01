@@ -28,7 +28,7 @@ export const Mission = () => {
 
         <DtoReveal delay={150}>
           <div className="relative">
-            <DtoPhoto label="Margaux, 53 & David, 48" ratio="4/5" src={missionMargauxDavid} alt="Margaux et David" objectPosition="center 25%" />
+            <DtoPhoto label="Margaux, 52 & David, 58" ratio="4/5" src={missionMargauxDavid} alt="Margaux et David" objectPosition="center 25%" />
             <span
               className="absolute"
               style={{
