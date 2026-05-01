@@ -1,13 +1,18 @@
 import { useLang } from "@/i18n/LangContext";
 import { DtoPhoto } from "@/components/DtoPhoto";
 import { DtoReveal } from "@/components/DtoReveal";
-import { Hand, MessagesSquare, UserSearch, Sparkles, Hourglass, HelpCircle } from "lucide-react";
 import diffClaire from "@/assets/diff-claire.png";
 import diffRachid from "@/assets/diff-rachid.png";
 import diffPaul from "@/assets/diff-paul.png";
 import diffAnna from "@/assets/diff-anna.png";
+import icon01 from "@/assets/icons/diff-01.svg";
+import icon02 from "@/assets/icons/diff-02.svg";
+import icon03 from "@/assets/icons/diff-03.svg";
+import icon04 from "@/assets/icons/diff-04.svg";
+import icon05 from "@/assets/icons/diff-05.svg";
+import icon06 from "@/assets/icons/diff-06.svg";
 
-const POINT_ICONS = [Hand, MessagesSquare, UserSearch, Sparkles, Hourglass, HelpCircle];
+const POINT_ICONS = [icon01, icon02, icon03, icon04, icon05, icon06];
 
 export const Diff = () => {
   const { t } = useLang();
@@ -37,16 +42,29 @@ export const Diff = () => {
 
           <ul className="mt-10 divide-y divide-dto-soft/10 border-y border-dto-soft/10">
             {t.diff.points.map(([a, b], i) => {
-              const Icon = POINT_ICONS[i] ?? HelpCircle;
+              const iconSrc = POINT_ICONS[i] ?? POINT_ICONS[0];
               return (
                 <DtoReveal key={i} as="li" delay={i * 60}>
                   <div className="flex items-center gap-5 py-4">
                     <span
                       className="grid place-items-center w-9 h-9 shrink-0 rounded-full"
-                      style={{ border: "1px solid hsl(var(--dto-sage) / 0.4)", color: "hsl(var(--dto-sage))" }}
+                      style={{ border: "1px solid hsl(var(--dto-sage) / 0.4)" }}
                       aria-hidden
                     >
-                      <Icon size={16} strokeWidth={1.5} />
+                      <span
+                        className="block w-4 h-4"
+                        style={{
+                          backgroundColor: "hsl(var(--dto-sage))",
+                          WebkitMaskImage: `url(${iconSrc})`,
+                          maskImage: `url(${iconSrc})`,
+                          WebkitMaskRepeat: "no-repeat",
+                          maskRepeat: "no-repeat",
+                          WebkitMaskPosition: "center",
+                          maskPosition: "center",
+                          WebkitMaskSize: "contain",
+                          maskSize: "contain",
+                        }}
+                      />
                     </span>
                     <p className="text-soft text-[17px]">
                       <span className="text-muted-soft">{a}</span>{" "}
