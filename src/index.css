@@ -200,33 +200,3 @@
 @media (prefers-reduced-motion: reduce) {
   .dto-card-1, .dto-card-2, .dto-card-3, .dto-card-4 { animation: none; }
 }
-
-/* Logo intro: draw + fill animation */
-.dto-intro-svg path {
-  fill: hsl(var(--dto-text));
-  fill-opacity: 0;
-  stroke: hsl(var(--dto-text));
-  stroke-width: 0.6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
-  animation:
-    dto-logo-draw 1800ms cubic-bezier(.65,.05,.36,1) forwards,
-    dto-logo-fill 700ms ease 1500ms forwards;
-}
-
-@keyframes dto-logo-draw {
-  to { stroke-dashoffset: 0; }
-}
-@keyframes dto-logo-fill {
-  to { fill-opacity: 1; stroke-opacity: 0; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .dto-intro-svg path {
-    animation: none;
-    fill-opacity: 1;
-    stroke-opacity: 0;
-  }
-}

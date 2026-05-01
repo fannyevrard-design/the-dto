@@ -6,12 +6,10 @@ import { Mission } from "@/sections/Mission";
 import { Pillars } from "@/sections/Pillars";
 import { Footer } from "@/sections/Footer";
 import { DtoWaitlistModal } from "@/components/DtoWaitlistModal";
-import { DtoLogoIntro } from "@/components/DtoLogoIntro";
 
 const Index = () => {
   return (
     <LangProvider>
-      <DtoLogoIntro />
       <main className="min-h-screen bg-dto-bg text-dto-text">
         <Nav />
         <Hero />
