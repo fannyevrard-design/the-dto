@@ -19,7 +19,7 @@ export const Mission = () => {
           <div className="relative">
             <DtoPhoto label="Margaux, 52 & David, 58" ratio="4/5" src={missionMargauxDavid} alt="Margaux et David" objectPosition="center 25%" />
             <span
-              className="absolute right-3 top-3 lg:-right-6 lg:-top-6"
+              className="absolute left-3 top-3 lg:left-auto lg:-right-6 lg:-top-6"
               style={{
                 background: "hsl(var(--dto-sage))",
                 color: "hsl(var(--dto-bg))",
