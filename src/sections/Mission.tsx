@@ -4,7 +4,7 @@ import { DtoReveal } from "@/components/DtoReveal";
 import missionMargauxDavid from "@/assets/mission-margaux-david.png";
 
 export const Mission = () => {
-  const { t } = useLang();
+  const { t, openWaitlist } = useLang();
   return (
     <section id="mission" className="section-pad">
       <div className="container-dto grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] items-center gap-16 lg:gap-[100px]">
@@ -23,6 +23,23 @@ export const Mission = () => {
           </DtoReveal>
           <DtoReveal delay={280}>
             <p className="text-soft mt-5 text-[16px] leading-[1.7]">{t.mission.p3}</p>
+          </DtoReveal>
+          <DtoReveal delay={360}>
+            <div className="mt-8">
+              <button
+                type="button"
+                onClick={openWaitlist}
+                className="rounded-full px-7 py-[14px] text-[14px] font-semibold tracking-wide transition-transform duration-200 hover:-translate-y-[2px]"
+                style={{ background: "hsl(var(--dto-text-soft))", color: "hsl(var(--dto-bg))" }}
+              >
+                {t.hero.cta} →
+              </button>
+              <div className="mt-4 flex items-center gap-2 text-[12px] text-dto-soft">
+                <span aria-hidden style={{ color: "hsl(var(--dto-sage))", letterSpacing: "1px" }}>★★★★★</span>
+                <span>Déjà + de 500 inscrits</span>
+              </div>
+              <p className="text-muted-soft text-[12px] mt-2 max-w-[360px]">{t.hero.micro}</p>
+            </div>
           </DtoReveal>
         </div>
 

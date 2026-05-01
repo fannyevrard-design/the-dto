@@ -15,7 +15,7 @@ import icon06 from "@/assets/icons/diff-06.svg";
 const POINT_ICONS = [icon01, icon02, icon03, icon04, icon05, icon06];
 
 export const Diff = () => {
-  const { t } = useLang();
+  const { t, openWaitlist } = useLang();
 
   return (
     <section className="section-pad">
@@ -76,6 +76,23 @@ export const Diff = () => {
             <p className="mt-5 font-editorial italic text-sage text-[20px] leading-[1.5]" style={{ maxWidth: 560 }}>
               {t.diff.close}
             </p>
+          </DtoReveal>
+          <DtoReveal delay={280}>
+            <div className="mt-8">
+              <button
+                type="button"
+                onClick={openWaitlist}
+                className="rounded-full px-7 py-[14px] text-[14px] font-semibold tracking-wide transition-transform duration-200 hover:-translate-y-[2px]"
+                style={{ background: "hsl(var(--dto-text-soft))", color: "hsl(var(--dto-bg))" }}
+              >
+                {t.hero.cta} →
+              </button>
+              <div className="mt-4 flex items-center gap-2 text-[12px] text-dto-soft">
+                <span aria-hidden style={{ color: "hsl(var(--dto-sage))", letterSpacing: "1px" }}>★★★★★</span>
+                <span>Déjà + de 500 inscrits</span>
+              </div>
+              <p className="text-muted-soft text-[12px] mt-2 max-w-[360px]">{t.hero.micro}</p>
+            </div>
           </DtoReveal>
         </div>
       </div>
