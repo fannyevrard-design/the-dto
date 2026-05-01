@@ -153,13 +153,19 @@ export const Pillars = () => {
                       Non
                     </div>
                     <div
-                      className="size-14 rounded-full grid place-items-center"
+                      className="size-14 rounded-full grid place-items-center transition-transform"
                       style={{
-                        border: "1px solid hsl(var(--dto-sage) / 0.5)",
-                        background: "hsl(var(--dto-sage) / 0.08)",
+                        background:
+                          "radial-gradient(circle at 30% 25%, hsl(var(--dto-sage) / 0.95), hsl(var(--dto-sage) / 0.7) 60%, hsl(var(--dto-sage) / 0.55))",
+                        border: "1px solid hsl(var(--dto-sage) / 0.9)",
+                        boxShadow:
+                          "0 10px 24px -6px hsl(var(--dto-sage) / 0.55), 0 2px 6px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -2px 4px rgba(0,0,0,0.25)",
                       }}
                     >
-                      <span className="text-sage text-[10px] font-medium tracking-wide">
+                      <span
+                        className="text-[10px] font-medium tracking-wide"
+                        style={{ color: "hsl(var(--dto-bg))", textShadow: "0 1px 0 rgba(255,255,255,0.15)" }}
+                      >
                         Peut-être
                       </span>
                     </div>
