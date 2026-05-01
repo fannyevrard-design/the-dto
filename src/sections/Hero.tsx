@@ -90,7 +90,7 @@ export const Hero = () => {
 
           {/* (3,3) Daniel */}
           <DtoReveal delay={480} className="self-end">
-            <DtoPhoto label="Daniel, 62" ratio="4/5" src={heroDaniel} alt="Daniel, 62" objectPosition="center 25%" />
+            <DtoPhoto label="Daniel, 42" ratio="4/5" src={heroDaniel} alt="Daniel, 42" objectPosition="center 25%" />
           </DtoReveal>
         </div>
 
@@ -137,7 +137,7 @@ export const Hero = () => {
             <DtoPhoto label="Marc, 48" ratio="3/4" src={heroMarc} alt="Marc, 48" objectPosition="center 30%" />
             <DtoPhoto label="Hélène, 46" ratio="3/4" src={heroHelene} alt="Hélène, 46" objectPosition="center 25%" />
             <DtoPhoto label="Sophie, 51" ratio="4/5" src={heroSophie} alt="Sophie, 51" objectPosition="center 25%" />
-            <DtoPhoto label="Daniel, 62" ratio="4/5" src={heroDaniel} alt="Daniel, 62" objectPosition="center 25%" />
+            <DtoPhoto label="Daniel, 42" ratio="4/5" src={heroDaniel} alt="Daniel, 42" objectPosition="center 25%" />
           </div>
         </div>
 
