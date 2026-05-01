@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLang } from "@/i18n/LangContext";
 import { DtoLangSwitch } from "@/components/DtoLangSwitch";
+import dtoLogo from "@/assets/dto-logo.svg";
 
 export const Nav = () => {
   const { t, openWaitlist } = useLang();
@@ -26,8 +27,8 @@ export const Nav = () => {
       }}
     >
       <div className="mx-auto flex items-center justify-between" style={{ maxWidth: 1240, padding: "20px 48px" }}>
-        <a href="#top" className="flex items-baseline gap-2 group">
-          <span className="font-editorial text-[24px] text-dto-text leading-none">DatsTheOne</span>
+        <a href="#top" className="flex items-baseline gap-3 group">
+          <img src={dtoLogo} alt="DatsTheOne" className="h-6 w-auto" />
           <span className="font-editorial italic text-[14px] text-sage leading-none">est. 2026</span>
         </a>
 

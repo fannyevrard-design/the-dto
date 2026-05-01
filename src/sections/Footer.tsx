@@ -1,4 +1,5 @@
 import { useLang } from "@/i18n/LangContext";
+import dtoLogo from "@/assets/dto-logo.svg";
 
 export const Footer = () => {
   const { t } = useLang();
@@ -7,7 +8,7 @@ export const Footer = () => {
       <div className="mx-auto" style={{ maxWidth: 1240 }}>
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12">
           <div>
-            <div className="font-editorial text-dto-text" style={{ fontSize: 26 }}>DatsTheOne</div>
+            <img src={dtoLogo} alt="DatsTheOne" className="h-7 w-auto" />
             <p className="font-editorial italic text-sage mt-4 text-[16px] leading-[1.5]" style={{ maxWidth: 320 }}>
               "{t.footer.slogan}"
             </p>
