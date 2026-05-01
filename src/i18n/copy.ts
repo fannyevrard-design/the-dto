@@ -13,7 +13,7 @@ export const COPY = {
       micro: "L'application arrive bientôt. Soyez parmi les premiers informés.",
     },
     diff: {
-      eyebrow: "Le constat",
+      eyebrow: "-L'AUTHENTICITÉ",
       title: "L'humain au cœur de nos rencontres.",
       text: "Une application de rencontre pour celles et ceux qui ne veulent plus consommer les relations comme un catalogue.",
       points: [
