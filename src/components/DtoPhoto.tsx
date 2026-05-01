@@ -7,6 +7,9 @@ type Props = {
   ratio?: Ratio;
   className?: string;
   style?: CSSProperties;
+  src?: string;
+  alt?: string;
+  objectPosition?: string;
 };
 
 const ratioMap: Record<Ratio, string> = {
@@ -17,14 +20,34 @@ const ratioMap: Record<Ratio, string> = {
   "16/9": "aspect-video",
 };
 
-export const DtoPhoto = ({ label, ratio = "3/4", className = "", style }: Props) => {
+export const DtoPhoto = ({ label, ratio = "3/4", className = "", style, src, alt, objectPosition }: Props) => {
   return (
     <div
-      className={`relative w-full overflow-hidden rounded-[4px] photo-stripes ${ratioMap[ratio]} ${className}`}
+      className={`relative w-full overflow-hidden rounded-[4px] ${src ? "" : "photo-stripes"} ${ratioMap[ratio]} ${className}`}
       style={style}
-      aria-label={`Placeholder photo: ${label}`}
+      aria-label={src ? alt ?? label : `Placeholder photo: ${label}`}
     >
-      <span className="absolute bottom-3 left-3 font-mono-ui text-[11px] tracking-wide" style={{ color: "rgba(232,228,222,0.6)" }}>
+      {src && (
+        <img
+          src={src}
+          alt={alt ?? label}
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ objectPosition: objectPosition ?? "center" }}
+        />
+      )}
+      {/* Subtle dark gradient for legibility of the label, only when a real image is shown */}
+      {src && (
+        <div
+          aria-hidden
+          className="absolute inset-x-0 bottom-0 h-20 pointer-events-none"
+          style={{ background: "linear-gradient(to top, rgba(15,19,25,0.55), rgba(15,19,25,0))" }}
+        />
+      )}
+      <span
+        className="absolute bottom-3 left-3 font-mono-ui text-[11px] tracking-wide"
+        style={{ color: "rgba(232,228,222,0.78)" }}
+      >
         ◇ {label}
       </span>
     </div>
