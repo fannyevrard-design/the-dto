@@ -121,9 +121,9 @@ export const COPY = {
     },
     mission: {
       eyebrow: "​",
-      title: "​More context for more meaningful connections.",
-      p1: "Born from a simple idea: finding love today feels a lot like finding the right job - and that's more than just a metaphor.",
-      p2: "DatsTheOne reimagines online dating by giving people the information they need to recognize the right person, make more informed choices, and connect with confidence and authenticity.",
+      title: "More context for better matches.",
+      p1: "It all started with a simple idea: finding love today is a lot like finding the right job - and that’s not just a metaphor.",
+      p2: "DatsTheOne is reimagining online dating by giving people the information they need to recognize the right person, make more informed choices, and connect with confidence and authenticity.",
       p3: "Because we believe real connections start with clarity.",
       badge: "Built for 40+",
     },
