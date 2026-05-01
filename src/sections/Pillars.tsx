@@ -188,7 +188,7 @@ export const Pillars = () => {
           </DtoReveal>
 
           {/* Right features */}
-          <div className="lg:col-span-3 space-y-10 z-10">
+          <div className="lg:col-span-3 space-y-10 z-10 order-3 lg:order-none">
             {[1, 2].map((idx) => (
               <DtoReveal key={idx} delay={120 + idx * 120}>
                 <div className="relative">
