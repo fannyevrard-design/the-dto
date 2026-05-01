@@ -73,7 +73,7 @@ export const Diff = () => {
           </ul>
 
           <DtoReveal delay={200}>
-            <p className="mt-8 font-editorial italic text-sage text-[20px] leading-[1.5]" style={{ maxWidth: 560 }}>
+            <p className="mt-5 font-editorial italic text-sage text-[20px] leading-[1.5]" style={{ maxWidth: 560 }}>
               {t.diff.close}
             </p>
           </DtoReveal>
