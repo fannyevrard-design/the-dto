@@ -5,7 +5,7 @@ export const COPY = {
     nav: { concept: "Concept", mission: "Mission", features: "Fonctionnalités", cta: "Télécharger l'application" },
     hero: {
       badge: "Pensé pour 40+",
-      titleA: "Rencontrer quelqu'un à 40, 50, 60 ans.",
+      titleA: "",
       titleB: "Vous méritez mieux qu'un simple swipe.",
       subtitle: "Les vraies connexions demandent du temps, de la nuance et de l'intention.",
       slogan: "Find the right partner, at the right time, for the right reasons.",
