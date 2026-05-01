@@ -5,6 +5,20 @@ import heroMarc from "@/assets/hero-marc.png";
 import heroHelene from "@/assets/hero-helene-new.png";
 import heroSophie from "@/assets/hero-sophie.png";
 import heroDaniel from "@/assets/hero-daniel.png";
+import dtoLogo from "@/assets/dto-logo-horizontal.svg";
+
+const LogoWow = ({ className = "" }: { className?: string }) => (
+  <div
+    className={`dto-logo-wrap ${className}`}
+    style={{ ["--logo-mask" as any]: `url(${dtoLogo})` }}
+  >
+    <img
+      src={dtoLogo}
+      alt="DatsTheOne"
+      style={{ height: 44, width: "auto", display: "block" }}
+    />
+  </div>
+);
 
 export const Hero = () => {
   const { t, openWaitlist, lang } = useLang();
