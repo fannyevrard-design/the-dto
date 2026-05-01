@@ -15,7 +15,7 @@ import icon06 from "@/assets/icons/diff-06.svg";
 const POINT_ICONS = [icon01, icon02, icon03, icon04, icon05, icon06];
 
 export const Diff = () => {
-  const { t } = useLang();
+  const { t, openWaitlist } = useLang();
 
   return (
     <section className="section-pad">
