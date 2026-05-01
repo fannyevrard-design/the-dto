@@ -8,7 +8,7 @@ export const COPY = {
       titleA: "",
       titleB: "Vous méritez mieux qu'un simple swipe.",
       subtitle: "Les vraies connexions demandent du temps, de la nuance et de l'intention.",
-      slogan: "Find the right partner, at the right time, for the right reasons.",
+      slogan: "Parce que les bonnes rencontres arrivent au bon moment, pour les bonnes raisons.",
       cta: "Télécharger l'application",
       micro: "L'application arrive bientôt. Soyez parmi les premiers informés.",
     },
@@ -74,7 +74,7 @@ export const COPY = {
       invalidEmail: "Courriel invalide.",
     },
     footer: {
-      slogan: "Find the right partner, at the right time, for the right reasons.",
+      slogan: "Parce que les bonnes rencontres arrivent au bon moment, pour les bonnes raisons.",
       contact: "Contact",
       follow: "Nous suivre",
       legal: "Légal",
