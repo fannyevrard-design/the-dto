@@ -81,7 +81,7 @@ export const Hero = () => {
 
           {/* (3,1) Sophie */}
           <DtoReveal delay={360} className="self-start">
-            <DtoPhoto label="sophie, 48" ratio="4/3" src={heroSophie} alt="Sophie, 48" objectPosition="center 30%" />
+            <DtoPhoto label="" ratio="4/3" src={heroSophie} alt="Sophie, 48" objectPosition="center 30%" />
           </DtoReveal>
 
           {/* (3,3) Daniel */}
