@@ -57,10 +57,18 @@ export const DtoPhoto = ({ label, ratio = "3/4", className = "", style, src, alt
       )}
       {label && (
         <span
-          className="absolute bottom-3 left-3 font-mono-ui text-[11px] tracking-wide"
+          className="absolute bottom-3 left-3 flex items-center gap-1.5 font-mono-ui text-[11px] tracking-wide"
           style={{ color: "rgba(232,228,222,0.78)" }}
         >
-          ◇ {label}
+          <span
+            aria-hidden
+            className="inline-block h-2 w-2 rounded-full"
+            style={{
+              background: "#22c55e",
+              boxShadow: "0 0 0 2px rgba(34,197,94,0.25), 0 0 6px rgba(34,197,94,0.6)",
+            }}
+          />
+          {label}
         </span>
       )}
     </div>
