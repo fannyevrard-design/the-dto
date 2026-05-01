@@ -1,14 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { useLang } from "@/i18n/LangContext";
+import { supabase } from "@/integrations/supabase/client";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const DtoWaitlistModal = () => {
-  const { isWaitlistOpen, closeWaitlist, t } = useLang();
+  const { isWaitlistOpen, closeWaitlist, t, lang } = useLang();
   const [first, setFirst] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const firstInputRef = useRef<HTMLInputElement | null>(null);
 
@@ -29,12 +31,12 @@ export const DtoWaitlistModal = () => {
 
   useEffect(() => {
     if (!isWaitlistOpen) {
-      // reset on close
       const id = setTimeout(() => {
         setFirst("");
         setEmail("");
         setError(null);
         setSuccess(false);
+        setSubmitting(false);
       }, 250);
       return () => clearTimeout(id);
     }
@@ -42,14 +44,32 @@ export const DtoWaitlistModal = () => {
 
   if (!isWaitlistOpen) return null;
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!EMAIL_RE.test(email)) {
       setError(t.modal.invalidEmail);
       return;
     }
     setError(null);
-    // Simulated submit. TODO: hook into Mailchimp / ConvertKit later.
+    setSubmitting(true);
+    const { error: insertError } = await supabase
+      .from("waitlist_signups")
+      .insert({
+        first_name: first.trim() || null,
+        email: email.trim().toLowerCase(),
+        source: "modal",
+        lang,
+      });
+    setSubmitting(false);
+    if (insertError) {
+      if (insertError.code === "23505") {
+        // already registered – treat as success
+        setSuccess(true);
+        return;
+      }
+      setError(t.modal.invalidEmail);
+      return;
+    }
     setSuccess(true);
   };
 
