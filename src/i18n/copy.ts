@@ -91,7 +91,7 @@ export const COPY = {
       badge: "Built for 40+",
       titleA: "",
       titleB: " You deserve more than a swipe.",
-      subtitle: "Real connections take time, nuance, and intention.",
+      subtitle: "Meaningful connections take time, sensitivity, and intention.",
       slogan: "Find the right partner, at the right time, for the right reasons.",
       cta: "Download the App",
       micro: "Pre-launch. Be part of the future.",
