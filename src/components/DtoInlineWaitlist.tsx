@@ -76,10 +76,11 @@ export const DtoInlineWaitlist = () => {
       />
       <button
         type="submit"
-        className="rounded-[10px] px-7 py-[14px] text-[14px] font-semibold tracking-wide transition-transform duration-200 hover:-translate-y-[1px] whitespace-nowrap"
+        disabled={submitting}
+        className="rounded-[10px] px-7 py-[14px] text-[14px] font-semibold tracking-wide transition-transform duration-200 hover:-translate-y-[1px] whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed"
         style={{ background: "hsl(var(--dto-bg))", color: "hsl(var(--dto-text))" }}
       >
-        {t.waitlist.button}
+        {submitting ? "…" : t.waitlist.button}
       </button>
       {error && <div className="md:absolute md:-bottom-6 text-[12px]" style={{ color: "hsl(var(--dto-bg))" }}>{error}</div>}
     </form>
