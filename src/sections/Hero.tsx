@@ -55,7 +55,7 @@ export const Hero = () => {
               }}
             >
               {t.hero.titleA}
-              <br />
+
               <span className="italic text-sage" style={{ fontWeight: 400 }}>{t.hero.titleB}</span>
             </h1>
 
