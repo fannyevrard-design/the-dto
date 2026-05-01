@@ -5,6 +5,20 @@ import heroMarc from "@/assets/hero-marc.png";
 import heroHelene from "@/assets/hero-helene-new.png";
 import heroSophie from "@/assets/hero-sophie.png";
 import heroDaniel from "@/assets/hero-daniel.png";
+import dtoLogo from "@/assets/dto-logo-horizontal.svg";
+
+const LogoWow = ({ className = "" }: { className?: string }) => (
+  <div
+    className={`dto-logo-wrap ${className}`}
+    style={{ ["--logo-mask" as any]: `url(${dtoLogo})` }}
+  >
+    <img
+      src={dtoLogo}
+      alt="DatsTheOne"
+      style={{ height: 44, width: "auto", display: "block" }}
+    />
+  </div>
+);
 
 export const Hero = () => {
   const { t, openWaitlist, lang } = useLang();
@@ -28,6 +42,7 @@ export const Hero = () => {
 
           {/* center block spans 3 rows */}
           <DtoReveal delay={120} className="row-span-3 flex flex-col items-center justify-center text-center px-2">
+            <LogoWow className="mb-5" />
             <span
               className="inline-block mb-6"
               style={{
@@ -97,6 +112,7 @@ export const Hero = () => {
         {/* Mobile / tablet stacked */}
         <div className="md:hidden flex flex-col items-center text-center">
           <DtoReveal>
+            <LogoWow className="mb-5 mx-auto" />
             <span
               className="inline-block mb-6"
               style={{
