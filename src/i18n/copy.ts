@@ -2,7 +2,7 @@ export type Lang = "fr" | "en";
 
 export const COPY = {
   fr: {
-    nav: { concept: "Concept", mission: "Mission", features: "Fonctionnalités", cta: "Télécharger l'application" },
+    nav: { concept: "Concept", mission: "Mission", features: "Fonctionnalités", contact: "Contact", cta: "Télécharger l'application" },
     hero: {
       badge: "Pensé pour les 40+",
       titleA: "",
@@ -85,7 +85,7 @@ export const COPY = {
     },
   },
   en: {
-    nav: { concept: "Concept", mission: "Premises", features: "Features", cta: "Download the App" },
+    nav: { concept: "Concept", mission: "Premises", features: "Features", contact: "Contact", cta: "Download the App" },
     hero: {
       badge: "Built for 40+",
       titleA: "Dating at 40, 50, 60",

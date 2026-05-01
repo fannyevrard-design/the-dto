@@ -10,6 +10,7 @@ export const Footer = () => {
   const privacyHref = lang === "fr" ? "/politique-de-confidentialite" : "/privacy";
   return (
     <footer
+      id="contact"
       style={{
         background: "hsl(var(--dto-sage))",
         color: ink,
