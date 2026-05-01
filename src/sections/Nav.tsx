@@ -77,6 +77,7 @@ export const Nav = () => {
             <a href="#mission" onClick={() => setMenuOpen(false)} className="font-editorial text-[32px] text-dto-text">{t.nav.mission}</a>
             <a href="#features" onClick={() => setMenuOpen(false)} className="font-editorial text-[32px] text-dto-text">{t.nav.features}</a>
             <a href="#contact" onClick={() => setMenuOpen(false)} className="font-editorial text-[32px] text-dto-text">{t.nav.contact}</a>
+            <button type="button" onClick={() => { setMenuOpen(false); openWaitlist(); }} className="font-editorial text-[32px] text-dto-text text-left">{t.nav.support}</button>
             <div className="pt-4"><DtoLangSwitch /></div>
             <button
               type="button"
