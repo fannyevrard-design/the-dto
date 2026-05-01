@@ -112,6 +112,7 @@ export const Hero = () => {
         {/* Mobile / tablet stacked */}
         <div className="md:hidden flex flex-col items-center text-center">
           <DtoReveal>
+            <LogoWow className="mb-5 mx-auto" />
             <span
               className="inline-block mb-6"
               style={{
