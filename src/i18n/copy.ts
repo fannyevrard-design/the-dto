@@ -48,7 +48,7 @@ export const COPY = {
       items: [
         { n: "01", t: "Profils plus complets", d: "Des profils conçus pour aller au-delà de quelques photos et d'une phrase d'accroche." },
         { n: "02", t: "Décisions plus nuancées", d: "Parce qu'une connexion ne se résume pas toujours à oui ou non." },
-        { n: "03", t: "Technologie au service de l'humain", d: "Une technologie utilisant l'intelligence artificielle pour mieux vous recontrer. " },
+        { n: "03", t: "Technologie au service de l'humain", d: "Une technologie utilisant l'intelligence artificielle pour mieux vous rencontrer. " },
       ],
     },
     waitlist: {
