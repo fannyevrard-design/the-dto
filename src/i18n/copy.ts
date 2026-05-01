@@ -118,11 +118,11 @@ export const COPY = {
       maybe: { word: "Maybe.", desc: "When there is enough curiosity to go further." },
     },
     mission: {
-      eyebrow: "Our premises",
-      title: "Meeting someone at 40, 50 or 60.",
-      p1: "At this stage of life, we're not just looking for a profile. We're looking for a presence, an energy, a real compatibility.",
-      p2: "We've already lived, loved, learned, sometimes started over. We know better what we want. And above all, we know what we no longer want.",
-      p3: "Because after 40, dating isn't always love at first sight. Sometimes, it's a curiosity that grows.",
+      eyebrow: "​",
+      title: "​More context for more meaningful connections.",
+      p1: "Born from a simple idea: finding love today feels a lot like finding the right job — and that's more than just a metaphor.",
+      p2: "DatsTheOne reimagines online dating by giving people the information they need to recognize the right person, make more informed choices, and connect with confidence and authenticity.",
+      p3: "Because we believe real connections start with clarity.",
       badge: "Built for 40+",
     },
     pillars: {
