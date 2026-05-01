@@ -1,7 +1,7 @@
 import { useLang } from "@/i18n/LangContext";
 import { DtoReveal } from "@/components/DtoReveal";
 import heroHelene from "@/assets/hero-helene.png";
-import dtoSigle from "@/assets/dto-sigle.svg";
+import dtoSigle from "@/assets/dto-sigle-blanc.svg";
 
 export const Pillars = () => {
   const { t } = useLang();
@@ -109,8 +109,7 @@ export const Pillars = () => {
                     <img
                       src={dtoSigle}
                       alt="DatsTheOne"
-                      className="h-3.5 w-auto opacity-40"
-                      style={{ filter: "invert(1)" }}
+                      className="h-3.5 w-auto opacity-50"
                     />
                   </div>
 
