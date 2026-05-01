@@ -40,12 +40,12 @@ export const Diff = () => {
             <p className="text-soft mt-6" style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 520 }}>{t.diff.text}</p>
           </DtoReveal>
 
-          <ul className="mt-10 divide-y divide-dto-soft/10">
+          <ul className="mt-6 divide-y divide-dto-soft/10">
             {t.diff.points.map(([a, b], i) => {
               const iconSrc = POINT_ICONS[i] ?? POINT_ICONS[0];
               return (
                 <DtoReveal key={i} as="li" delay={i * 60}>
-                  <div className="flex items-center gap-5 py-4">
+                  <div className="flex items-center gap-5 py-2.5">
                     <span className="grid place-items-center w-10 h-10 shrink-0" aria-hidden>
                       <span
                         className="block w-7 h-7"
@@ -73,7 +73,7 @@ export const Diff = () => {
           </ul>
 
           <DtoReveal delay={200}>
-            <p className="mt-8 font-editorial italic text-sage text-[20px] leading-[1.5]" style={{ maxWidth: 560 }}>
+            <p className="mt-5 font-editorial italic text-sage text-[20px] leading-[1.5]" style={{ maxWidth: 560 }}>
               {t.diff.close}
             </p>
           </DtoReveal>
