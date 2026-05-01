@@ -90,7 +90,7 @@ export const COPY = {
     hero: {
       badge: "Built for 40+",
       titleA: "",
-      titleB: " You deserves more than a swipe.",
+      titleB: " You deserve more than a swipe.",
       subtitle: "Real connections take time, nuance, and intention.",
       slogan: "Find the right partner, at the right time, for the right reasons.",
       cta: "Download the App",
@@ -99,7 +99,7 @@ export const COPY = {
     social: { signups: "Already 500+ signups" },
     diff: {
       eyebrow: "The premise",
-      title: "People at the heart of dating.",
+      title: "Putting people back at the heart of dating.",
       text: "A dating app for those who no longer want to consume relationships like a catalogue.",
       points: [
         ["Less", "automatic swiping."],
@@ -131,8 +131,8 @@ export const COPY = {
       eyebrow: "Features",
       title: "A clearer, more human, more intentional approach.",
       items: [
-        { n: "01", t: "Richer profiles", d: "Profiles designed to go beyond a few photos and a catchy sentence." },
-        { n: "02", t: "More nuanced decisions", d: "Because connection is not always just yes or no." },
+        { n: "01", t: "Richer profiles", d: "Profiles designed to go beyond a few photos and a catchy line." },
+        { n: "02", t: "More nuanced decisions", d: "Because connection is not always a simple yes or no." },
         { n: "03", t: "Technology in service of people", d: "AI can help create clarity, but it should never replace real human connection." },
       ],
     },
