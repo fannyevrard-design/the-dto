@@ -200,3 +200,41 @@
 @media (prefers-reduced-motion: reduce) {
   .dto-card-1, .dto-card-2, .dto-card-3, .dto-card-4 { animation: none; }
 }
+
+/* Logo wow reveal */
+@keyframes dto-logo-reveal {
+  0%   { opacity: 0; transform: translateY(-12px) scale(0.92); filter: blur(8px); }
+  60%  { opacity: 1; filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+@keyframes dto-logo-shine {
+  0%   { background-position: -150% 0; opacity: 0; }
+  20%  { opacity: 1; }
+  100% { background-position: 250% 0; opacity: 0; }
+}
+@keyframes dto-logo-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+
+.dto-logo-wrap {
+  position: relative;
+  display: inline-block;
+  animation: dto-logo-reveal 1100ms cubic-bezier(.2,.7,.2,1) both,
+             dto-logo-float 6s ease-in-out 1200ms infinite;
+}
+.dto-logo-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.55) 50%, transparent 70%);
+  background-size: 200% 100%;
+  -webkit-mask: var(--logo-mask) center / contain no-repeat;
+          mask: var(--logo-mask) center / contain no-repeat;
+  animation: dto-logo-shine 2400ms ease-in-out 600ms 1 both;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dto-logo-wrap, .dto-logo-wrap::after { animation: none; }
+}
