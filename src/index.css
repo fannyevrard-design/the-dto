@@ -162,3 +162,41 @@
 .dto-rise { animation: dto-rise 500ms cubic-bezier(.2,.7,.2,1) both; }
 .dto-fade { animation: dto-fade 400ms ease both; }
 .dto-reveal-in { animation: dto-reveal 700ms cubic-bezier(.2,.7,.2,1) both; }
+
+/* Tinder-style hero card animation: gentle float + subtle tilt, lift on hover */
+@keyframes dto-card-float-a {
+  0%, 100% { transform: translateY(0) rotate(-1.2deg); }
+  50%      { transform: translateY(-6px) rotate(-0.4deg); }
+}
+@keyframes dto-card-float-b {
+  0%, 100% { transform: translateY(0) rotate(1.4deg); }
+  50%      { transform: translateY(-7px) rotate(0.6deg); }
+}
+@keyframes dto-card-float-c {
+  0%, 100% { transform: translateY(0) rotate(-0.8deg); }
+  50%      { transform: translateY(-5px) rotate(0deg); }
+}
+@keyframes dto-card-float-d {
+  0%, 100% { transform: translateY(0) rotate(1deg); }
+  50%      { transform: translateY(-8px) rotate(0.2deg); }
+}
+
+.dto-card {
+  will-change: transform;
+  transform-origin: center;
+  transition: transform 500ms cubic-bezier(.2,.7,.2,1), box-shadow 500ms ease;
+  box-shadow: 0 14px 40px -18px rgba(0,0,0,0.55);
+}
+.dto-card:hover {
+  transform: translateY(-10px) rotate(0deg) scale(1.02) !important;
+  box-shadow: 0 28px 60px -20px rgba(0,0,0,0.7);
+  animation-play-state: paused;
+}
+.dto-card-1 { animation: dto-card-float-a 7s ease-in-out infinite; }
+.dto-card-2 { animation: dto-card-float-b 8s ease-in-out infinite; animation-delay: -1.5s; }
+.dto-card-3 { animation: dto-card-float-c 7.5s ease-in-out infinite; animation-delay: -3s; }
+.dto-card-4 { animation: dto-card-float-d 8.5s ease-in-out infinite; animation-delay: -2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .dto-card-1, .dto-card-2, .dto-card-3, .dto-card-4 { animation: none; }
+}
