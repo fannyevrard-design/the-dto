@@ -93,7 +93,7 @@ export const COPY = {
       subtitle: "Real connections take time, nuance, and intention.",
       slogan: "Find the right partner, at the right time, for the right reasons.",
       cta: "Download the App",
-      micro: "Pre-launch. Be among the first to know.",
+      micro: "Pre-launch. Be part of the future.",
     },
     diff: {
       eyebrow: "The premise",
