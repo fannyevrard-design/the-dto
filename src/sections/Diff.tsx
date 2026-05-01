@@ -40,7 +40,7 @@ export const Diff = () => {
             <p className="text-soft mt-6" style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 520 }}>{t.diff.text}</p>
           </DtoReveal>
 
-          <ul className="mt-10 divide-y divide-dto-soft/10 border-y border-dto-soft/10">
+          <ul className="mt-10 divide-y divide-dto-soft/10">
             {t.diff.points.map(([a, b], i) => {
               const iconSrc = POINT_ICONS[i] ?? POINT_ICONS[0];
               return (
