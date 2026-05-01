@@ -22,30 +22,11 @@ export const Diff = () => {
       <div className="container-dto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-[100px] items-center">
         {/* Left: photo collage */}
         <DtoReveal>
-          {/* Desktop / tablet: 2x2 collage */}
-          <div className="hidden md:grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <DtoPhoto label="" ratio="3/4" className="translate-y-6" src={diffClaire} alt="Claire, 54" objectPosition="center 25%" />
             <DtoPhoto label="" ratio="3/4" src={diffRachid} alt="Rachid, 58" objectPosition="center 30%" />
             <DtoPhoto label="" ratio="4/5" src={diffPaul} alt="Paul, 49" objectPosition="center 25%" />
             <DtoPhoto label="" ratio="4/5" className="-translate-y-4" src={diffAnna} alt="Anna, 47" objectPosition="center 20%" />
-          </div>
-
-          {/* Mobile: horizontal swipeable card carousel */}
-          <div
-            className="md:hidden -mx-6 px-6 flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2"
-            style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
-          >
-            <style>{`.diff-scroll::-webkit-scrollbar{display:none}`}</style>
-            {[
-              { src: diffClaire, alt: "Claire, 54", pos: "center 25%" },
-              { src: diffRachid, alt: "Rachid, 58", pos: "center 30%" },
-              { src: diffPaul, alt: "Paul, 49", pos: "center 25%" },
-              { src: diffAnna, alt: "Anna, 47", pos: "center 20%" },
-            ].map((p) => (
-              <div key={p.alt} className="snap-center shrink-0 w-[72%]">
-                <DtoPhoto label="" ratio="3/4" src={p.src} alt={p.alt} objectPosition={p.pos} />
-              </div>
-            ))}
           </div>
         </DtoReveal>
 
