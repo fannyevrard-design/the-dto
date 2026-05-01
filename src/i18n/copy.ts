@@ -89,7 +89,7 @@ export const COPY = {
     nav: { concept: "Concept", mission: "Premises", features: "Features", contact: "Contact", support: "Support us", cta: "Download the App" },
     hero: {
       badge: "Built for 40+",
-      titleA: "Dating at 40, 50, 60",
+      titleA: "",
       titleB: " deserves more than a swipe.",
       subtitle: "Real connections take time, nuance, and intention.",
       slogan: "Find the right partner, at the right time, for the right reasons.",
