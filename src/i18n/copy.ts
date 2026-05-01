@@ -36,10 +36,10 @@ export const COPY = {
     },
     mission: {
       eyebrow: "​",
-      title: "Rencontrer quelqu'un à 40, 50 ou 60 ans.",
-      p1: "À cette étape de la vie, on ne cherche pas seulement un profil. On cherche une présence, une énergie, une vraie compatibilité.",
-      p2: "On a déjà vécu, aimé, appris, parfois recommencé. On sait mieux ce qu'on veut. Et surtout, on sait ce qu'on ne veut plus.",
-      p3: "Parce qu'après 40 ans, une rencontre n'est pas toujours un coup de foudre instantané. Parfois, c'est une curiosité qui grandit.",
+      title: "​Plus de contexte pour des rencontres plus justes.",
+      p1: "Née d’une idée simple : trouver l’amour aujourd’hui ressemble beaucoup à trouver le bon emploi - et ce n’est pas qu’une image. ",
+      p2: "DatsTheOne repense la rencontre en ligne en donnant aux gens les informations dont ils ont besoin pour reconnaître la bonne personne, faire des choix plus éclairés et se connecter avec confiance et authenticité.",
+      p3: "Parce que nous croyons que les vraies connexions commencent par la clarté.",
       badge: "Pensé pour les 40+",
     },
     pillars: {
