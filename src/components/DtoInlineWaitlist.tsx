@@ -1,23 +1,38 @@
 import { useState } from "react";
 import { useLang } from "@/i18n/LangContext";
+import { supabase } from "@/integrations/supabase/client";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const DtoInlineWaitlist = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const [first, setFirst] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!EMAIL_RE.test(email)) {
       setError(t.waitlist.invalidEmail);
       return;
     }
     setError(null);
-    // Simulated. TODO: connect to Mailchimp / ConvertKit later.
+    setSubmitting(true);
+    const { error: insertError } = await supabase
+      .from("waitlist_signups")
+      .insert({
+        first_name: first.trim() || null,
+        email: email.trim().toLowerCase(),
+        source: "inline",
+        lang,
+      });
+    setSubmitting(false);
+    if (insertError && insertError.code !== "23505") {
+      setError(t.waitlist.invalidEmail);
+      return;
+    }
     setDone(true);
   };
 
@@ -61,10 +76,11 @@ export const DtoInlineWaitlist = () => {
       />
       <button
         type="submit"
-        className="rounded-[10px] px-7 py-[14px] text-[14px] font-semibold tracking-wide transition-transform duration-200 hover:-translate-y-[1px] whitespace-nowrap"
+        disabled={submitting}
+        className="rounded-[10px] px-7 py-[14px] text-[14px] font-semibold tracking-wide transition-transform duration-200 hover:-translate-y-[1px] whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed"
         style={{ background: "hsl(var(--dto-bg))", color: "hsl(var(--dto-text))" }}
       >
-        {t.waitlist.button}
+        {submitting ? "…" : t.waitlist.button}
       </button>
       {error && <div className="md:absolute md:-bottom-6 text-[12px]" style={{ color: "hsl(var(--dto-bg))" }}>{error}</div>}
     </form>

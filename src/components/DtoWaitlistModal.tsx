@@ -1,14 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { useLang } from "@/i18n/LangContext";
+import { supabase } from "@/integrations/supabase/client";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const DtoWaitlistModal = () => {
-  const { isWaitlistOpen, closeWaitlist, t } = useLang();
+  const { isWaitlistOpen, closeWaitlist, t, lang } = useLang();
   const [first, setFirst] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const firstInputRef = useRef<HTMLInputElement | null>(null);
 
@@ -29,12 +31,12 @@ export const DtoWaitlistModal = () => {
 
   useEffect(() => {
     if (!isWaitlistOpen) {
-      // reset on close
       const id = setTimeout(() => {
         setFirst("");
         setEmail("");
         setError(null);
         setSuccess(false);
+        setSubmitting(false);
       }, 250);
       return () => clearTimeout(id);
     }
@@ -42,14 +44,32 @@ export const DtoWaitlistModal = () => {
 
   if (!isWaitlistOpen) return null;
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!EMAIL_RE.test(email)) {
       setError(t.modal.invalidEmail);
       return;
     }
     setError(null);
-    // Simulated submit. TODO: hook into Mailchimp / ConvertKit later.
+    setSubmitting(true);
+    const { error: insertError } = await supabase
+      .from("waitlist_signups")
+      .insert({
+        first_name: first.trim() || null,
+        email: email.trim().toLowerCase(),
+        source: "modal",
+        lang,
+      });
+    setSubmitting(false);
+    if (insertError) {
+      if (insertError.code === "23505") {
+        // already registered – treat as success
+        setSuccess(true);
+        return;
+      }
+      setError(t.modal.invalidEmail);
+      return;
+    }
     setSuccess(true);
   };
 
@@ -115,10 +135,11 @@ export const DtoWaitlistModal = () => {
               {error && <div className="text-[12px] text-dto-sage">{error}</div>}
               <button
                 type="submit"
-                className="mt-1 rounded-[10px] py-3 px-5 text-[14px] font-semibold tracking-wide transition-transform duration-200 hover:-translate-y-[1px]"
+                disabled={submitting}
+                className="mt-1 rounded-[10px] py-3 px-5 text-[14px] font-semibold tracking-wide transition-transform duration-200 hover:-translate-y-[1px] disabled:opacity-60 disabled:cursor-not-allowed"
                 style={{ background: "hsl(var(--dto-text-soft))", color: "hsl(var(--dto-bg))" }}
               >
-                {t.modal.button}
+                {submitting ? "…" : t.modal.button}
               </button>
               <p className="text-muted-soft text-[11px] mt-2">{t.modal.small}</p>
             </form>
