@@ -12,6 +12,7 @@ export const COPY = {
       cta: "Télécharger l'application",
       micro: "Pré-lancement. Soyez parmi les premiers informés.",
     },
+    social: { signups: "Déjà + de 500 inscrits" },
     diff: {
       eyebrow: "- L'authenticité",
       title: "L'humain au cœur de nos rencontres.",
@@ -95,6 +96,7 @@ export const COPY = {
       cta: "Download the App",
       micro: "Pre-launch. Be part of the future.",
     },
+    social: { signups: "Already 500+ signups" },
     diff: {
       eyebrow: "The premise",
       title: "People at the heart of dating.",

@@ -102,7 +102,7 @@ export const Diff = () => {
               </button>
               <div className="mt-4 flex items-center gap-2 text-[12px] text-dto-soft">
                 <span aria-hidden style={{ color: "hsl(var(--dto-sage))", letterSpacing: "1px" }}>★★★★★</span>
-                <span>Déjà + de 500 inscrits</span>
+                <span>{t.social.signups}</span>
               </div>
               <p className="text-muted-soft text-[12px] mt-2 max-w-[360px]">{t.hero.micro}</p>
             </div>
