@@ -36,12 +36,23 @@ export const DtoPhoto = ({ label, ratio = "3/4", className = "", style, src, alt
           style={{ objectPosition: objectPosition ?? "center" }}
         />
       )}
+      {/* Vignette: subtle radial darkening on edges for premium lifestyle look */}
+      {src && (
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse at center, rgba(15,19,25,0) 45%, rgba(15,19,25,0.35) 85%, rgba(15,19,25,0.6) 100%)",
+          }}
+        />
+      )}
       {/* Subtle dark gradient for legibility of the label, only when a real image is shown */}
       {src && (
         <div
           aria-hidden
           className="absolute inset-x-0 bottom-0 h-20 pointer-events-none"
-          style={{ background: "linear-gradient(to top, rgba(15,19,25,0.55), rgba(15,19,25,0))" }}
+          style={{ background: "linear-gradient(to top, rgba(15,19,25,0.7), rgba(15,19,25,0))" }}
         />
       )}
       {label && (
