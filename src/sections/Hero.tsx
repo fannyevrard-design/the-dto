@@ -23,7 +23,7 @@ export const Hero = () => {
         >
           {/* (1,1) Marc */}
           <DtoReveal delay={0} className="self-end">
-            <DtoPhoto label=" " ratio="3/4" src={heroMarc} alt="Marc, 56" objectPosition="center 30%" />
+            <DtoPhoto label="Marc, 56" ratio="3/4" src={heroMarc} alt="Marc, 56" objectPosition="center 30%" />
           </DtoReveal>
 
           {/* center block spans 3 rows */}
@@ -126,7 +126,7 @@ export const Hero = () => {
           </DtoReveal>
 
           <div className="grid grid-cols-2 gap-3 mt-10 w-full">
-            <DtoPhoto label=" " ratio="3/4" src={heroMarc} alt="Marc, 56" objectPosition="center 30%" />
+            <DtoPhoto label="Marc, 56" ratio="3/4" src={heroMarc} alt="Marc, 56" objectPosition="center 30%" />
             <DtoPhoto label={lang === "fr" ? "hélène, 51" : "helene, 51"} ratio="3/4" src={heroHelene} alt="Hélène, 51" objectPosition="center 25%" />
             <DtoPhoto label="Sophie, 51" ratio="4/3" src={heroSophie} alt="Sophie, 51" objectPosition="center 30%" />
             <DtoPhoto label="daniel, 62" ratio="4/3" src={heroDaniel} alt="Daniel, 62" objectPosition="center 30%" />
