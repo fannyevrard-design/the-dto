@@ -1,6 +1,7 @@
 import { useLang } from "@/i18n/LangContext";
 import { DtoReveal } from "@/components/DtoReveal";
 import heroHelene from "@/assets/hero-helene.png";
+import dtoSigle from "@/assets/dto-sigle.svg";
 
 export const Pillars = () => {
   const { t } = useLang();
@@ -105,10 +106,12 @@ export const Pillars = () => {
                     <span className="text-[10px] tabular-nums opacity-50 text-dto-soft">
                       19:42
                     </span>
-                    <div className="flex gap-1">
-                      <div className="size-1.5 rounded-full bg-dto-soft/30" />
-                      <div className="size-1.5 rounded-full bg-dto-soft/30" />
-                    </div>
+                    <img
+                      src={dtoSigle}
+                      alt="DatsTheOne"
+                      className="h-3.5 w-auto opacity-40"
+                      style={{ filter: "invert(1)" }}
+                    />
                   </div>
 
                   {/* Profile */}
