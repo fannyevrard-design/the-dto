@@ -1,23 +1,38 @@
 import { useState } from "react";
 import { useLang } from "@/i18n/LangContext";
+import { supabase } from "@/integrations/supabase/client";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const DtoInlineWaitlist = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const [first, setFirst] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!EMAIL_RE.test(email)) {
       setError(t.waitlist.invalidEmail);
       return;
     }
     setError(null);
-    // Simulated. TODO: connect to Mailchimp / ConvertKit later.
+    setSubmitting(true);
+    const { error: insertError } = await supabase
+      .from("waitlist_signups")
+      .insert({
+        first_name: first.trim() || null,
+        email: email.trim().toLowerCase(),
+        source: "inline",
+        lang,
+      });
+    setSubmitting(false);
+    if (insertError && insertError.code !== "23505") {
+      setError(t.waitlist.invalidEmail);
+      return;
+    }
     setDone(true);
   };
 
