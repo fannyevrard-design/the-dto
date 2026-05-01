@@ -4,7 +4,7 @@ import dtoLogo from "@/assets/dto-logo.svg";
 export const Footer = () => {
   const { t } = useLang();
   return (
-    <footer style={{ background: "hsl(var(--dto-bg))", borderTop: "1px solid rgba(232,228,222,0.08)", padding: "80px 56px 40px" }}>
+    <footer style={{ background: "hsl(var(--dto-sage))", color: "hsl(var(--dto-bg))", borderTop: "1px solid rgba(15,19,25,0.08)", padding: "80px 56px 40px" }}>
       <div className="mx-auto" style={{ maxWidth: 1240 }}>
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12">
           <div>

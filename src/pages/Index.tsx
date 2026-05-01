@@ -4,7 +4,6 @@ import { Hero } from "@/sections/Hero";
 import { Diff } from "@/sections/Diff";
 import { Mission } from "@/sections/Mission";
 import { Pillars } from "@/sections/Pillars";
-import { Waitlist } from "@/sections/Waitlist";
 import { Footer } from "@/sections/Footer";
 import { DtoWaitlistModal } from "@/components/DtoWaitlistModal";
 
@@ -17,7 +16,6 @@ const Index = () => {
         <Diff />
         <Pillars />
         <Mission />
-        <Waitlist />
         <Footer />
         <DtoWaitlistModal />
       </main>
