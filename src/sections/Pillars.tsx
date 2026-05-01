@@ -159,9 +159,7 @@ export const Pillars = () => {
                         background: "hsl(var(--dto-sage) / 0.08)",
                       }}
                     >
-                      <span className="text-sage text-[10px] font-medium tracking-wide">
-                        Peut-être
-                      </span>
+                      <img src={dtoSigle} alt="DatsTheOne" className="h-6 w-auto" />
                     </div>
                     <div
                       className="size-11 rounded-full grid place-items-center text-[10px] italic text-sage"
