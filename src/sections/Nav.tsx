@@ -33,7 +33,7 @@ export const Nav = () => {
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-8">
-          <a href="#concept" className="font-body text-[13px] tracking-wide text-soft hover:text-dto-text transition-colors">{t.nav.concept}</a>
+          
           <a href="#mission" className="font-body text-[13px] tracking-wide text-soft hover:text-dto-text transition-colors">{t.nav.mission}</a>
           <a href="#features" className="font-body text-[13px] tracking-wide text-soft hover:text-dto-text transition-colors">{t.nav.features}</a>
           <span aria-hidden className="h-4 w-px bg-dto-soft/20" />
@@ -71,7 +71,7 @@ export const Nav = () => {
             ✕
           </button>
           <div className="container-dto flex flex-col gap-8 mt-10">
-            <a href="#concept" onClick={() => setMenuOpen(false)} className="font-editorial text-[32px] text-dto-text">{t.nav.concept}</a>
+            
             <a href="#mission" onClick={() => setMenuOpen(false)} className="font-editorial text-[32px] text-dto-text">{t.nav.mission}</a>
             <a href="#features" onClick={() => setMenuOpen(false)} className="font-editorial text-[32px] text-dto-text">{t.nav.features}</a>
             <div className="pt-4"><DtoLangSwitch /></div>
