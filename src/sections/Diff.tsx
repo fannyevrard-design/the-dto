@@ -18,7 +18,7 @@ export const Diff = () => {
   const { t, openWaitlist } = useLang();
 
   return (
-    <section className="section-pad">
+    <section id="concept" className="section-pad">
       <div className="container-dto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-[100px] items-center">
         {/* Left: photo collage */}
         <DtoReveal>
