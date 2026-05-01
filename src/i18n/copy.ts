@@ -53,8 +53,8 @@ export const COPY = {
     },
     waitlist: {
       eyebrow: "Pré-lancement",
-      title: "L'application arrive bientôt.",
-      text: "Inscrivez-vous à la liste d'attente et soyez parmi les premiers à découvrir DatsTheOne.",
+      title: "Pré-lancement.",
+      text: "Soyez parmi les premiers informés.",
       first: "Prénom",
       email: "Courriel",
       button: "Rejoindre la liste d'attente",
@@ -136,8 +136,8 @@ export const COPY = {
     },
     waitlist: {
       eyebrow: "Pre-launch",
-      title: "The app is coming soon.",
-      text: "Join the waitlist and be among the first to discover DatsTheOne.",
+      title: "Pre-launch.",
+      text: "Be among the first to know.",
       first: "First name",
       email: "Email",
       button: "Join the waitlist",
