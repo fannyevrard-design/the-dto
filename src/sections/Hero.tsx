@@ -42,6 +42,7 @@ export const Hero = () => {
 
           {/* center block spans 3 rows */}
           <DtoReveal delay={120} className="row-span-3 flex flex-col items-center justify-center text-center px-2">
+            <LogoWow className="mb-5" />
             <span
               className="inline-block mb-6"
               style={{
