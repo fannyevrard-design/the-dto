@@ -99,41 +99,14 @@ export const COPY = {
     social: { signups: "Already 500+ signups" },
     diff: {
       eyebrow: "The premise",
-      title: "Putting people back at the heart of dating.",
-      text: "A dating app for those who no longer want to consume relationships like a catalogue.",
-      points: [
-        ["Less", "automatic swiping."],
-        ["More", "context."],
-        ["Fewer", "empty profiles."],
-        ["More", "authenticity."],
-        ["Less", "pressure to decide too quickly."],
-        ["More room", "for \u201cmaybe.\u201d"],
-      ] as [string, string][],
-      close: "Because at this stage of life, connection deserves more than a rushed yes or no.",
-    },
-    concept: {
-      eyebrow: "Concept",
-      title: "We all carry life with us.",
-      text: "As we grow older, our stories become richer, our expectations clearer, and our decisions more nuanced. DatsTheOne makes room for that reality.",
-      yes: { word: "Yes.", desc: "When the spark is clear." },
-      no: { word: "No.", desc: "When it simply doesn't align." },
-      maybe: { word: "Maybe.", desc: "When there is enough curiosity to go further." },
-    },
-    mission: {
-      eyebrow: "​",
-      title: "​More context for more meaningful connections.",
-      p1: "Born from a simple idea: finding love today feels a lot like finding the right job — and that's more than just a metaphor.",
-      p2: "DatsTheOne reimagines online dating by giving people the information they need to recognize the right person, make more informed choices, and connect with confidence and authenticity.",
-      p3: "Because we believe real connections start with clarity.",
-      badge: "Built for 40+",
-    },
-    pillars: {
-      eyebrow: "Features",
-      title: "A clearer, more human, more intentional approach.",
+      title: "Placing people back at the heart of dating.",
+...
+      p1: "Born from a simple idea: finding love today feels a lot like finding the right job - and that's more than just a metaphor.",
+...
       items: [
         { n: "01", t: "Richer profiles", d: "Profiles designed to go beyond a few photos and a catchy line." },
         { n: "02", t: "More nuanced decisions", d: "Because connection is not always a simple yes or no." },
-        { n: "03", t: "Technology in service of people", d: "AI can help create clarity, but it should never replace real human connection." },
+        { n: "03", t: "Technology at the service of people", d: "AI can help create clarity, but it should never replace real human connections." },
       ],
     },
     waitlist: {
