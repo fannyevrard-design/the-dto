@@ -2,7 +2,7 @@ import { useLang } from "@/i18n/LangContext";
 import { DtoPhoto } from "@/components/DtoPhoto";
 import { DtoReveal } from "@/components/DtoReveal";
 import heroMarc from "@/assets/hero-marc.png";
-import heroHelene from "@/assets/hero-helene.png";
+import heroHelene from "@/assets/hero-helene-new.png";
 import heroSophie from "@/assets/hero-sophie.png";
 import heroDaniel from "@/assets/hero-daniel.png";
 
