@@ -130,7 +130,7 @@ export const Pillars = () => {
                       />
                       <div className="absolute bottom-5 left-5 right-5">
                         <p className="text-[10px] text-sage uppercase tracking-[0.2em] mb-1.5">
-                          Architecte, 51
+                          Architecte, 61
                         </p>
                         <h4
                           className="font-editorial text-dto-text"
