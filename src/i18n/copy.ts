@@ -85,7 +85,7 @@ export const COPY = {
     },
   },
   en: {
-    nav: { concept: "Concept", mission: "Purpose", features: "Approach", cta: "Download the App" },
+    nav: { concept: "Concept", mission: "Premise", features: "Feature", cta: "Download the App" },
     hero: {
       badge: "Built for 40+",
       titleA: "Dating at 40, 50, 60",
@@ -118,7 +118,7 @@ export const COPY = {
       maybe: { word: "Maybe.", desc: "When there is enough curiosity to go further." },
     },
     mission: {
-      eyebrow: "Our purpose",
+      eyebrow: "Our premise",
       title: "Meeting someone at 40, 50 or 60.",
       p1: "At this stage of life, we're not just looking for a profile. We're looking for a presence, an energy, a real compatibility.",
       p2: "We've already lived, loved, learned, sometimes started over. We know better what we want. And above all, we know what we no longer want.",
