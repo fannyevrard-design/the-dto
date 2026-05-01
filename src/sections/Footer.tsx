@@ -3,35 +3,43 @@ import dtoLogo from "@/assets/dto-logo.svg";
 
 export const Footer = () => {
   const { t } = useLang();
+  const ink = "hsl(var(--dto-bg))";
   return (
-    <footer style={{ background: "hsl(var(--dto-sage))", color: "hsl(var(--dto-bg))", borderTop: "1px solid rgba(15,19,25,0.08)", padding: "80px 56px 40px" }}>
+    <footer
+      style={{
+        background: "hsl(var(--dto-sage))",
+        color: ink,
+        borderTop: "1px solid rgba(15,19,25,0.12)",
+        padding: "80px 56px 40px",
+      }}
+    >
       <div className="mx-auto" style={{ maxWidth: 1240 }}>
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12">
           <div>
-            <img src={dtoLogo} alt="DatsTheOne" className="h-7 w-auto" />
-            <p className="font-editorial italic text-sage mt-4 text-[16px] leading-[1.5]" style={{ maxWidth: 320 }}>
+            <img src={dtoLogo} alt="DatsTheOne" className="h-7 w-auto" style={{ filter: "brightness(0)" }} />
+            <p className="font-editorial italic mt-4 text-[16px] leading-[1.5]" style={{ maxWidth: 320, color: ink }}>
               "{t.footer.slogan}"
             </p>
           </div>
           <div>
-            <div className="kicker mb-4">{t.footer.contact}</div>
-            <a href="mailto:info@datstheone.com" className="block text-soft text-[14px] hover:text-dto-text transition-colors">info@datstheone.com</a>
-            <p className="text-muted-soft text-[14px] mt-2">{t.footer.city}</p>
+            <div className="mb-4 font-mono-ui text-[11px] uppercase tracking-[0.18em]" style={{ color: ink }}>{t.footer.contact}</div>
+            <a href="mailto:info@datstheone.com" className="block text-[14px] transition-opacity hover:opacity-70" style={{ color: ink }}>info@datstheone.com</a>
+            <p className="text-[14px] mt-2" style={{ color: ink, opacity: 0.75 }}>{t.footer.city}</p>
           </div>
           <div>
-            <div className="kicker mb-4">{t.footer.follow}</div>
-            <a href="#" className="block text-soft text-[14px] hover:text-dto-text transition-colors">Instagram</a>
-            <a href="#" className="block text-soft text-[14px] hover:text-dto-text transition-colors mt-2">Facebook</a>
+            <div className="mb-4 font-mono-ui text-[11px] uppercase tracking-[0.18em]" style={{ color: ink }}>{t.footer.follow}</div>
+            <a href="#" className="block text-[14px] transition-opacity hover:opacity-70" style={{ color: ink }}>Instagram</a>
+            <a href="#" className="block text-[14px] mt-2 transition-opacity hover:opacity-70" style={{ color: ink }}>Facebook</a>
           </div>
           <div>
-            <div className="kicker mb-4">{t.footer.legal}</div>
-            <a href="#" className="block text-soft text-[14px] hover:text-dto-text transition-colors">{t.footer.privacy}</a>
+            <div className="mb-4 font-mono-ui text-[11px] uppercase tracking-[0.18em]" style={{ color: ink }}>{t.footer.legal}</div>
+            <a href="#" className="block text-[14px] transition-opacity hover:opacity-70" style={{ color: ink }}>{t.footer.privacy}</a>
           </div>
         </div>
 
-        <div className="mt-16 pt-6 border-t border-dto-soft/10 flex flex-col md:flex-row justify-between gap-3">
-          <p className="text-muted-soft text-[12px]">{t.footer.rights}</p>
-          <p className="font-editorial italic text-sage text-[13px]">{t.footer.sub}</p>
+        <div className="mt-16 pt-6 flex flex-col md:flex-row justify-between gap-3" style={{ borderTop: "1px solid rgba(15,19,25,0.15)" }}>
+          <p className="text-[12px]" style={{ color: ink, opacity: 0.75 }}>{t.footer.rights}</p>
+          <p className="font-editorial italic text-[13px]" style={{ color: ink }}>{t.footer.sub}</p>
         </div>
       </div>
     </footer>
