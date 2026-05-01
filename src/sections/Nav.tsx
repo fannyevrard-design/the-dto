@@ -41,7 +41,7 @@ export const Nav = () => {
           <button
             type="button"
             onClick={openWaitlist}
-            className="rounded-full border border-dto-soft/40 px-5 py-2 text-[13px] tracking-wide text-dto-soft hover:bg-dto-soft hover:text-dto-bg transition-colors"
+            className="rounded-full bg-white px-5 py-2 text-[13px] tracking-wide text-dto-bg font-medium hover:bg-dto-soft transition-colors"
           >
             {t.nav.cta} →
           </button>
