@@ -29,7 +29,6 @@ export const Nav = () => {
       <div className="mx-auto flex items-center justify-between" style={{ maxWidth: 1240, padding: "20px 48px" }}>
         <a href="#top" className="flex items-baseline gap-3 group">
           <img src={dtoLogo} alt="DatsTheOne" className="h-6 w-auto" />
-          <span className="font-editorial italic text-[14px] text-sage leading-none">est. 2026</span>
         </a>
 
         {/* Desktop nav */}
