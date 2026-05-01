@@ -12,6 +12,7 @@ export const COPY = {
       cta: "Télécharger l'application",
       micro: "Pré-lancement. Soyez parmi les premiers informés.",
     },
+    social: { signups: "Déjà + de 500 inscrits" },
     diff: {
       eyebrow: "- L'authenticité",
       title: "L'humain au cœur de nos rencontres.",
