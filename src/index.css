@@ -200,3 +200,29 @@
 @media (prefers-reduced-motion: reduce) {
   .dto-card-1, .dto-card-2, .dto-card-3, .dto-card-4 { animation: none; }
 }
+
+/* DTO intro logo animation */
+.dto-intro-svg path {
+  fill: transparent;
+  stroke: hsl(var(--dto-text));
+  stroke-width: 0.6;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: dto-intro-draw 1.6s cubic-bezier(.65,.05,.36,1) forwards;
+}
+.dto-intro-svg[data-stage="fill"] path,
+.dto-intro-svg[data-stage="out"] path {
+  animation: dto-intro-draw 1.6s cubic-bezier(.65,.05,.36,1) forwards,
+             dto-intro-fill 700ms ease 0ms forwards;
+}
+@keyframes dto-intro-draw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes dto-intro-fill {
+  to { fill: hsl(var(--dto-text)); stroke-width: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dto-intro-svg path { animation: none; fill: hsl(var(--dto-text)); stroke: none; stroke-dashoffset: 0; }
+}
