@@ -37,6 +37,7 @@ export const Nav = () => {
           <a href="#mission" className="font-body text-[13px] tracking-wide text-soft hover:text-dto-text transition-colors">{t.nav.mission}</a>
           <a href="#features" className="font-body text-[13px] tracking-wide text-soft hover:text-dto-text transition-colors">{t.nav.features}</a>
           <a href="#contact" className="font-body text-[13px] tracking-wide text-soft hover:text-dto-text transition-colors">{t.nav.contact}</a>
+          <button type="button" onClick={openWaitlist} className="font-body text-[13px] tracking-wide text-soft hover:text-dto-text transition-colors">{t.nav.support}</button>
           <span aria-hidden className="h-4 w-px bg-dto-soft/20" />
           <DtoLangSwitch />
           <button
@@ -76,6 +77,7 @@ export const Nav = () => {
             <a href="#mission" onClick={() => setMenuOpen(false)} className="font-editorial text-[32px] text-dto-text">{t.nav.mission}</a>
             <a href="#features" onClick={() => setMenuOpen(false)} className="font-editorial text-[32px] text-dto-text">{t.nav.features}</a>
             <a href="#contact" onClick={() => setMenuOpen(false)} className="font-editorial text-[32px] text-dto-text">{t.nav.contact}</a>
+            <button type="button" onClick={() => { setMenuOpen(false); openWaitlist(); }} className="font-editorial text-[32px] text-dto-text text-left">{t.nav.support}</button>
             <div className="pt-4"><DtoLangSwitch /></div>
             <button
               type="button"
