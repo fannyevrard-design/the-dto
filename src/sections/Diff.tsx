@@ -20,8 +20,8 @@ export const Diff = () => {
           <div className="grid grid-cols-2 gap-4">
             <DtoPhoto label="" ratio="3/4" className="translate-y-6" src={diffClaire} alt="Claire, 54" objectPosition="center 25%" />
             <DtoPhoto label="" ratio="3/4" src={diffRachid} alt="Rachid, 58" objectPosition="center 30%" />
-            <DtoPhoto label="" ratio="4/3" src={diffPaul} alt="Paul, 49" objectPosition="center 30%" />
-            <DtoPhoto label="" ratio="4/3" className="-translate-y-4" src={diffAnna} alt="Anna, 47" objectPosition="center 25%" />
+            <DtoPhoto label="" ratio="4/5" src={diffPaul} alt="Paul, 49" objectPosition="center 25%" />
+            <DtoPhoto label="" ratio="4/5" className="-translate-y-4" src={diffAnna} alt="Anna, 47" objectPosition="center 20%" />
           </div>
         </DtoReveal>
 
