@@ -35,7 +35,7 @@ export const COPY = {
       maybe: { word: "Peut-être.", desc: "Quand il y a assez de curiosité pour aller plus loin." },
     },
     mission: {
-      eyebrow: "Notre mission",
+      eyebrow: "- Notre mission -",
       title: "Rencontrer quelqu'un à 40, 50 ou 60 ans.",
       p1: "À cette étape de la vie, on ne cherche pas seulement un profil. On cherche une présence, une énergie, une vraie compatibilité.",
       p2: "On a déjà vécu, aimé, appris, parfois recommencé. On sait mieux ce qu'on veut. Et surtout, on sait ce qu'on ne veut plus.",
@@ -43,7 +43,7 @@ export const COPY = {
       badge: "Pensé pour 40+",
     },
     pillars: {
-      eyebrow: "Fonctionnalités",
+      eyebrow: "- Fonctionnalités -",
       title: "Une approche plus claire, plus humaine, plus intentionnelle.",
       items: [
         { n: "01", t: "Profils plus complets", d: "Des profils conçus pour aller au-delà de quelques photos et d'une phrase d'accroche." },
