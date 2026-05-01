@@ -9,7 +9,7 @@ export const Mission = () => {
       <div className="container-dto grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] items-center gap-16 lg:gap-[100px]">
         <div>
           <DtoReveal>
-            <div className="kicker mb-5">— {t.mission.eyebrow}</div>
+            <div className="kicker mb-5">{t.mission.eyebrow}</div>
             <h2 className="font-editorial text-dto-text" style={{ fontSize: "clamp(36px, 4.6vw, 60px)", lineHeight: 1.05, fontWeight: 300, letterSpacing: "-0.01em" }}>
               {t.mission.title}
             </h2>
