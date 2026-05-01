@@ -1,6 +1,7 @@
 import { useLang } from "@/i18n/LangContext";
 import { DtoPhoto } from "@/components/DtoPhoto";
 import { DtoReveal } from "@/components/DtoReveal";
+import { DtoStackedCards } from "@/components/DtoStackedCards";
 import diffClaire from "@/assets/diff-claire.png";
 import diffRachid from "@/assets/diff-rachid.png";
 import diffPaul from "@/assets/diff-paul.png";
