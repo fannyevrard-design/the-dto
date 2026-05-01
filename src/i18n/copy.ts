@@ -100,7 +100,7 @@ export const COPY = {
     diff: {
       eyebrow: "The premise",
       title: "Placing people back at the heart of dating.",
-      text: "A dating app for those who no longer want to consume relationships like a catalogue.",
+      text: "A dating app for those who no longer want to treat relationships like items in a catalog.",
       points: [
         ["Less", "automatic swiping."],
         ["More", "context."],
