@@ -17,7 +17,7 @@ export const Concept = () => {
     <section id="concept" className="section-pad" style={{ background: "hsl(var(--dto-bg-elev))" }}>
       <div className="container-dto text-center">
         <DtoReveal>
-          <div className="kicker mb-5">— {t.concept.eyebrow} —</div>
+          <div className="kicker mb-5">{t.concept.eyebrow}</div>
           <h2
             className="font-editorial text-dto-text mx-auto"
             style={{ fontSize: "clamp(36px, 4.6vw, 60px)", lineHeight: 1.05, fontWeight: 300, maxWidth: 820, letterSpacing: "-0.01em" }}
