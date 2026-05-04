@@ -60,20 +60,7 @@ export const Diff = () => {
                 <DtoReveal key={i} as="li" delay={i * 20}>
                   <div className="flex items-center gap-5 py-2.5">
                     <span className="grid place-items-center w-10 h-10 shrink-0" aria-hidden>
-                      <span
-                        className="block w-7 h-7"
-                        style={{
-                          backgroundColor: "hsl(var(--dto-sage))",
-                          WebkitMaskImage: `url(${iconSrc})`,
-                          maskImage: `url(${iconSrc})`,
-                          WebkitMaskRepeat: "no-repeat",
-                          maskRepeat: "no-repeat",
-                          WebkitMaskPosition: "center",
-                          maskPosition: "center",
-                          WebkitMaskSize: "contain",
-                          maskSize: "contain",
-                        }}
-                      />
+                      <img src={iconSrc} alt="" className="block w-7 h-7 object-contain opacity-90" loading="lazy" />
                     </span>
                     <p className="text-soft text-[17px]">
                       <span className="text-muted-soft">{a}</span>{" "}
