@@ -57,7 +57,7 @@ export const Diff = () => {
             {t.diff.points.map(([a, b], i) => {
               const iconSrc = POINT_ICONS[i] ?? POINT_ICONS[0];
               return (
-                <DtoReveal key={i} as="li" delay={i * 60}>
+                <DtoReveal key={i} as="li" delay={i * 20}>
                   <div className="flex items-center gap-5 py-2.5">
                     <span className="grid place-items-center w-10 h-10 shrink-0" aria-hidden>
                       <span
