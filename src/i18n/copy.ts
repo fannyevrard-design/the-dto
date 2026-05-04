@@ -133,7 +133,7 @@ export const COPY = {
       items: [
         { n: "01", t: "More detailed profiles", d: "Profiles designed to go beyond just a few photos and a catchphrase." },
         { n: "02", t: "Advanced Functionalities ", d: "Because a connection starts with confidence." },
-        { n: "03", t: "Technology at the service of people", d: "Technology that uses artificial intelligence to better understand your needs." },
+        { n: "03", t: "Technology at the service of people", d: "Leading-edge technology where AI doesn’t replace Human Interactions. " },
       ],
     },
     waitlist: {
