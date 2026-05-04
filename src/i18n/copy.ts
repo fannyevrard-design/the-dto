@@ -121,10 +121,10 @@ export const COPY = {
     },
     mission: {
       eyebrow: "​",
-      title: "More context for better matches.",
-      p1: "It all started with a simple idea: finding love today is a lot like finding the right job - and that’s not just a metaphor.",
-      p2: "DatsTheOne is reimagining online dating by giving people the information they need to recognize the right person, make more informed choices, and connect with confidence and authenticity.",
-      p3: "Because we believe real connections start with clarity. You deserve more than just a swipe.",
+      title: "Our Purpose",
+      p1: "Born from a premise that finding love today is a lot like finding the right job (it’s a fact), DatsTheOne rethinks online dating by giving people the information they need to decide who is truly right for them —so they can connect with confidence and authenticity, because we believe that authentic connections start with clarity. ",
+      p2: "Many daters experience frustration because profiles only show part of the picture. What you see is not always what you get, and timing plays a critical role — especially for people who value quality over quantity. DatsTheOne addresses this challenge by helping members make informed decisions before engaging, improving the chances of real compatibility and meaningful connections.\nDesigned for individuals aged 40 to 65, DatsTheOne focuses on dating attitude, life stage, and personal preferences. Member profiles evolve over time and are built like a résumé — clear, structured, and honest — so expectations are aligned from the start. This transparency encourages more genuine exchanges and better matches.",
+      p3: "By enhancing user experience through state-of-the-art data and life cycle based features, DatsTheOne is building the future of connecting people who are serious about finding “The One” —because true relationships deserve more than a swipe.",
       badge: "Built for 40+",
     },
     pillars: {
