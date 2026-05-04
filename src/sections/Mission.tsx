@@ -10,7 +10,7 @@ export const Mission = () => {
       <div className="container-dto grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] items-center gap-10 lg:gap-[100px]">
         <DtoReveal className="order-1 lg:hidden">
           <div className="kicker mb-5">{t.mission.eyebrow}</div>
-          <h2 className="font-editorial text-dto-text" style={{ fontSize: "clamp(36px, 4.6vw, 60px)", lineHeight: 1.05, fontWeight: 300, letterSpacing: "-0.01em" }}>
+          <h2 className="text-dto-text text-6xl font-serif" style={{ lineHeight: 1.05, fontWeight: 300, letterSpacing: "-0.01em" }}>
             {t.mission.title}
           </h2>
         </DtoReveal>
@@ -40,7 +40,7 @@ export const Mission = () => {
         <div className="order-3 lg:order-1">
           <DtoReveal className="hidden lg:block">
             <div className="kicker mb-5">{t.mission.eyebrow}</div>
-            <h2 className="font-editorial text-dto-text" style={{ fontSize: "clamp(36px, 4.6vw, 60px)", lineHeight: 1.05, fontWeight: 300, letterSpacing: "-0.01em" }}>
+            <h2 className="text-dto-text text-6xl font-serif" style={{ lineHeight: 1.05, fontWeight: 300, letterSpacing: "-0.01em" }}>
               {t.mission.title}
             </h2>
           </DtoReveal>
