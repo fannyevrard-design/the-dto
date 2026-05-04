@@ -106,7 +106,7 @@ export const COPY = {
         ["Disappointed ", "with the quality of dating apps."],
         ["What you see ", "is not always what you get."],
         ["Annoyed ", "being ghosted."],
-        ["Less", "pressure to decide too quickly."],
+        ["Tired ", "swiping like a robot. "],
         ["More room", "for \u201cmaybe.\u201d"],
       ] as [string, string][],
       close: "We are not just another dating site: \nA revolution in the art of choosing and connecting people!",
