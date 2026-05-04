@@ -102,7 +102,7 @@ export const COPY = {
       title: "Another dating site you say?",
       text: "We aim to be different by improving matchmaking success, offering members the key information they need to make informed decisions.",
       points: [
-        ["Less", "automatic swiping."],
+        ["Quality ", "is better than quantity."],
         ["More", "context."],
         ["Fewer", "empty profiles."],
         ["More", "authenticity."],
