@@ -105,7 +105,7 @@ export const COPY = {
         ["Quality ", "is better than quantity."],
         ["Disappointed ", "with the quality of dating apps."],
         ["What you see ", "is not always what you get."],
-        ["More", "authenticity."],
+        ["Annoyed ", "being ghosted."],
         ["Less", "pressure to decide too quickly."],
         ["More room", "for \u201cmaybe.\u201d"],
       ] as [string, string][],
