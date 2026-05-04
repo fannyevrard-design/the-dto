@@ -50,7 +50,7 @@ export const Diff = () => {
             <h2 className="font-editorial text-dto-text" style={{ fontSize: "clamp(36px, 4.6vw, 60px)", lineHeight: 1.05, fontWeight: 300, letterSpacing: "-0.01em" }}>
               {t.diff.title}
             </h2>
-            <p className="text-soft mt-6" style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 520 }}>{t.diff.text}</p>
+            <p className="text-soft mt-6 text-xl" style={{ fontSize: 17, lineHeight: 1.7, maxWidth: 520 }}>{t.diff.text}</p>
           </DtoReveal>
 
           <ul className="mt-6 divide-y divide-dto-soft/10">
@@ -73,7 +73,7 @@ export const Diff = () => {
           </ul>
 
           <DtoReveal delay={200}>
-            <p className="mt-5 font-editorial italic text-sage text-[20px] leading-[1.5]" style={{ maxWidth: 560 }}>
+            <p className="mt-5 font-editorial italic text-sage text-[20px] leading-[1.5] font-medium" style={{ maxWidth: 560 }}>
               {t.diff.close}
             </p>
           </DtoReveal>

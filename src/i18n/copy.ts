@@ -99,8 +99,8 @@ export const COPY = {
     social: { signups: "Already 500+ signups" },
     diff: {
       eyebrow: "The premise",
-      title: "Placing people back at the heart of dating.",
-      text: "A dating app for those who no longer want to treat relationships like items in a catalog.",
+      title: "Another dating site you say?",
+      text: "We aim to be different by improving matchmaking success, offering members the key information they need to make informed decisions.",
       points: [
         ["Less", "automatic swiping."],
         ["More", "context."],
@@ -109,7 +109,7 @@ export const COPY = {
         ["Less", "pressure to decide too quickly."],
         ["More room", "for \u201cmaybe.\u201d"],
       ] as [string, string][],
-      close: "Because at this stage of life, connection deserves more than a rushed yes or no.",
+      close: "We are not just another dating site: \nA revolution in the art of choosing and connecting people!",
     },
     concept: {
       eyebrow: "Concept",
