@@ -86,7 +86,7 @@ export const COPY = {
     },
   },
   en: {
-    nav: { concept: "Concept", mission: "Premises", features: "Features", contact: "Contact", support: "Support us", cta: "Download the App" },
+    nav: { concept: "Concept", mission: "About Us", features: "Features", contact: "Contact", support: "Support us", cta: "Download the App" },
     hero: {
       badge: "Built for 40+",
       titleA: "",
