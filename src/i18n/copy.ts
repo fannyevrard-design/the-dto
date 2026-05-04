@@ -103,7 +103,7 @@ export const COPY = {
       text: "We aim to be different by improving matchmaking success, offering members the key information they need to make informed decisions.",
       points: [
         ["Quality ", "is better than quantity."],
-        ["More", "context."],
+        ["Disappointed ", "with the quality of dating apps."],
         ["Fewer", "empty profiles."],
         ["More", "authenticity."],
         ["Less", "pressure to decide too quickly."],
