@@ -104,7 +104,7 @@ export const COPY = {
       points: [
         ["Quality ", "is better than quantity."],
         ["Disappointed ", "with the quality of dating apps."],
-        ["Fewer", "empty profiles."],
+        ["What you see ", "is not always what you get."],
         ["More", "authenticity."],
         ["Less", "pressure to decide too quickly."],
         ["More room", "for \u201cmaybe.\u201d"],
