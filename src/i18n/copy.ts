@@ -107,7 +107,7 @@ export const COPY = {
         ["What you see ", "is not always what you get."],
         ["Annoyed ", "being ghosted."],
         ["Tired ", "swiping like a robot. "],
-        ["More room", "for \u201cmaybe.\u201d"],
+        ["Life timing ", "is everything."],
       ] as [string, string][],
       close: "We are not just another dating site: \nA revolution in the art of choosing and connecting people!",
     },
