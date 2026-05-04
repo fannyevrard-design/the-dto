@@ -129,7 +129,7 @@ export const COPY = {
     },
     pillars: {
       eyebrow: "Features",
-      title: "A clearer, more human, more intentional approach.",
+      title: "You will love what we are building.",
       items: [
         { n: "01", t: "More detailed profiles", d: "Profiles designed to go beyond just a few photos and a catchphrase." },
         { n: "02", t: "More nuanced decisions", d: "Because a connection isn't always a simple yes or no." },
