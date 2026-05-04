@@ -132,7 +132,7 @@ export const COPY = {
       title: "You will love what we are building.",
       items: [
         { n: "01", t: "More detailed profiles", d: "Profiles designed to go beyond just a few photos and a catchphrase." },
-        { n: "02", t: "More nuanced decisions", d: "Because a connection isn't always a simple yes or no." },
+        { n: "02", t: "Advanced Functionalities ", d: "Because a connection isn't always a simple yes or no." },
         { n: "03", t: "Technology at the service of people", d: "Technology that uses artificial intelligence to better understand your needs." },
       ],
     },
