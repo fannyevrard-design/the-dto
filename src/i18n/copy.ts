@@ -75,7 +75,7 @@ export const COPY = {
       invalidEmail: "Courriel invalide.",
     },
     footer: {
-      slogan: "Trouver la Bonne personne, au bon Moment, pour les bonnes Raisons.",
+      slogan: "Trouver la bonne personne, au bon moment, pour les bonnes raisons.",
       contact: "Contact",
       follow: "Nous suivre",
       legal: "Légal",
