@@ -266,8 +266,8 @@ export const Hero = () => {
               ★★★★★
             </span>
             <span
-              className="font-monoui uppercase text-soft"
-              style={{ fontSize: 11, letterSpacing: "0.14em" }}
+              className="text-soft"
+              style={{ fontSize: 12 }}
             >
               {t.social.signups}
             </span>
