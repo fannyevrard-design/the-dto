@@ -108,13 +108,6 @@ export const Hero = () => {
           }}
         >
           <span>DatsTheOne — Édition n°01</span>
-          <span className="inline-flex items-center gap-2">
-            <span
-              className="inline-block rounded-full"
-              style={{ width: 6, height: 6, background: "hsl(var(--dto-sage))" }}
-            />
-            Pré-lancement / 2026
-          </span>
         </div>
       )}
 
