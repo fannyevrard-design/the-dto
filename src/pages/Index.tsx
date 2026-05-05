@@ -1,4 +1,3 @@
-import { LangProvider } from "@/i18n/LangContext";
 import { Nav } from "@/sections/Nav";
 import { Hero } from "@/sections/Hero";
 import { Diff } from "@/sections/Diff";
@@ -10,7 +9,7 @@ import { DtoIntro } from "@/components/DtoIntro";
 
 const Index = () => {
   return (
-    <LangProvider>
+    <>
       <DtoIntro />
       <main className="min-h-screen bg-dto-bg text-dto-text">
         <Nav />
@@ -21,7 +20,7 @@ const Index = () => {
         <Footer />
         <DtoWaitlistModal />
       </main>
-    </LangProvider>
+    </>
   );
 };
 
