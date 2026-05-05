@@ -8,7 +8,7 @@ export const COPY = {
       titleA: "",
       titleB: "Vous méritez mieux qu'un simple swipe.",
       subtitle: "Les vraies connexions demandent du temps, de la nuance et de l'intention.",
-      slogan: "Trouver la Bonne personne, au bon Moment, pour les bonnes Raisons.",
+      slogan: "Trouver la bonne personne, au bon moment, pour les bonnes raisons.",
       cta: "Télécharger l'application",
       micro: "Pré-lancement. Soyez parmi les premiers informés.",
     },
