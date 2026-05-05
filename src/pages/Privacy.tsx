@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { LangProvider, useLang } from "@/i18n/LangContext";
+import { useLang } from "@/i18n/LangContext";
 import { Nav } from "@/sections/Nav";
 import { Footer } from "@/sections/Footer";
 import { DtoWaitlistModal } from "@/components/DtoWaitlistModal";
@@ -287,14 +287,12 @@ const PrivacyContent = () => {
 
 const Privacy = () => {
   return (
-    <LangProvider>
-      <main className="min-h-screen bg-dto-bg text-dto-text">
-        <Nav />
-        <PrivacyContent />
-        <Footer />
-        <DtoWaitlistModal />
-      </main>
-    </LangProvider>
+    <main className="min-h-screen bg-dto-bg text-dto-text">
+      <Nav />
+      <PrivacyContent />
+      <Footer />
+      <DtoWaitlistModal />
+    </main>
   );
 };
 
