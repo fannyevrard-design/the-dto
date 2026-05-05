@@ -278,22 +278,6 @@ export const Hero = () => {
         <p className="text-muted-soft text-[11px] mt-3">{t.hero.micro}</p>
       </div>
 
-      {/* ── Vertical label (desktop only) ────────────────────────────── */}
-      {isDesktop && (
-        <div
-          className="absolute font-monoui text-[10px] uppercase tracking-[0.3em] whitespace-nowrap z-[3]"
-          style={{
-            right:      28,
-            bottom:     64,
-            writingMode: "vertical-rl",
-            color:      "hsl(var(--dto-text-soft) / 0.30)",
-            opacity:    contentIn ? 1 : 0,
-            transition: "opacity 700ms ease 600ms",
-          }}
-        >
-          Hero / 01 — Monumental
-        </div>
-      )}
     </section>
   );
 };
