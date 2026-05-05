@@ -5,8 +5,8 @@ export const COPY = {
     nav: { concept: "Concept", mission: "À propos", features: "Fonctionnalités", contact: "Contact", support: "Soutenez-nous", cta: "Télécharger l'application" },
     hero: {
       badge: "Pensé pour les 40+",
-      titleA: "",
-      titleB: "Vous méritez mieux qu'un simple swipe.",
+      titleA: "Vous méritez mieux qu'un",
+      titleB: "simple swipe.",
       subtitle: "Les vraies connexions demandent du temps, de la nuance et de l'intention.",
       slogan: "Trouver la bonne personne, au bon moment, pour les bonnes raisons.",
       cta: "Télécharger l'application",
