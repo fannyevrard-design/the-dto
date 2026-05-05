@@ -34,7 +34,7 @@ export const Footer = () => {
           <div>
             <div className="mb-4 font-mono-ui text-[11px] uppercase tracking-[0.18em]" style={{ color: ink }}>{t.footer.follow}</div>
             <a href="#" className="block text-[14px] transition-opacity hover:opacity-70" style={{ color: ink }}>Instagram</a>
-            <a href="#" className="block text-[14px] mt-2 transition-opacity hover:opacity-70" style={{ color: ink }}>Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=61557210707571" target="_blank" rel="noopener noreferrer" className="block text-[14px] mt-2 transition-opacity hover:opacity-70" style={{ color: ink }}>Facebook</a>
           </div>
           <div>
             <div className="mb-4 font-mono-ui text-[11px] uppercase tracking-[0.18em]" style={{ color: ink }}>{t.footer.legal}</div>
