@@ -37,7 +37,7 @@ export const COPY = {
     },
     mission: {
       eyebrow: "​",
-      title: "​Plus de contexte pour des rencontres plus justes.",
+      title: "Notre objectif",
       p1: "Née d’une idée simple : trouver l’amour aujourd’hui ressemble beaucoup à trouver le bon emploi - et ce n’est pas qu’une image. ",
       p2: "DatsTheOne repense la rencontre en ligne en donnant aux gens les informations dont ils ont besoin pour reconnaître la bonne personne, faire des choix plus éclairés et se connecter avec confiance et authenticité.",
       p3: "Parce que nous croyons que les vraies connexions commencent par la clarté.",
