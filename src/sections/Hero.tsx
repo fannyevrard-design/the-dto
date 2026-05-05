@@ -56,7 +56,7 @@ export const Hero = () => {
             >
               {t.hero.titleA}
 
-              <span className="italic text-sage text-6xl" style={{ fontWeight: 400 }}>{t.hero.titleB}</span>
+              <span className="italic text-sage text-5xl" style={{ fontWeight: 400 }}>{t.hero.titleB}</span>
             </h1>
 
             <p className="text-soft mt-6 max-w-[520px]" style={{ fontSize: 17, lineHeight: 1.7 }}>
@@ -115,7 +115,7 @@ export const Hero = () => {
             <h1 className="font-editorial text-dto-text" style={{ fontSize: "clamp(40px, 9vw, 60px)", lineHeight: 1.05, fontWeight: 300 }}>
               {t.hero.titleA}
               <br />
-              <span className="italic text-sage text-6xl">{t.hero.titleB}</span>
+              <span className="italic text-sage text-5xl">{t.hero.titleB}</span>
             </h1>
             <p className="text-soft mt-5 text-[16px] leading-[1.7]">{t.hero.subtitle}</p>
             <button
