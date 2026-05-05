@@ -93,23 +93,7 @@ export const Hero = () => {
       className="relative overflow-hidden bg-dto-bg"
       style={{ minHeight: "100vh" }}
     >
-      {/* ── Folio bar (desktop only) ─────────────────────────────────── */}
-      {isDesktop && (
-        <div
-          className="absolute z-10 font-monoui text-[11px] uppercase tracking-[0.22em] flex justify-between items-center w-full"
-          style={{
-            top: pad - 20,
-            left: pad,
-            right: pad,
-            width: `calc(100% - ${pad * 2}px)`,
-            color: "hsl(var(--dto-text-soft) / 0.55)",
-            opacity: contentIn ? 1 : 0,
-            transition: "opacity 700ms ease 100ms",
-          }}
-        >
-          <span>DatsTheOne — Édition n°01</span>
-        </div>
-      )}
+      {/* ── Folio bar removed ─────────────────────────────────── */}
 
       {/* ── Logo stage ───────────────────────────────────────────────── */}
       <div
