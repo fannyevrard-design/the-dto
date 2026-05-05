@@ -59,7 +59,7 @@ const PrivacyContent = () => {
             <strong>Responsable de la protection des renseignements personnels</strong><br />
             DatsTheOne<br />
             Montréal, Québec, Canada<br />
-            Courriel : <a className="underline" href="mailto:privacy@datstheone.com">privacy@datstheone.com</a>
+            Courriel : <a className="underline" href="mailto:info@datstheone.com">info@datstheone.com</a>
           </p>
 
           <h2 className="font-editorial text-[26px] mt-12 mb-3">2. Renseignements personnels que nous recueillons</h2>
@@ -121,7 +121,7 @@ const PrivacyContent = () => {
           </ul>
           <p className="text-[16px] leading-[1.7] mb-4">
             Pour exercer ces droits, écrivez-nous à
-            {" "}<a className="underline" href="mailto:privacy@datstheone.com">privacy@datstheone.com</a>.
+            {" "}<a className="underline" href="mailto:info@datstheone.com">info@datstheone.com</a>.
             Nous y répondrons dans un délai de 30 jours.
           </p>
 
@@ -182,7 +182,7 @@ const PrivacyContent = () => {
             <strong>Privacy Officer</strong><br />
             DatsTheOne<br />
             Montréal, Québec, Canada<br />
-            Email: <a className="underline" href="mailto:privacy@datstheone.com">privacy@datstheone.com</a>
+            Email: <a className="underline" href="mailto:info@datstheone.com">info@datstheone.com</a>
           </p>
 
           <h2 className="font-editorial text-[26px] mt-12 mb-3">2. Information We Collect</h2>
@@ -238,7 +238,7 @@ const PrivacyContent = () => {
           </ul>
           <p className="text-[16px] leading-[1.7] mb-4">
             To exercise these rights, contact{" "}
-            <a className="underline" href="mailto:privacy@datstheone.com">privacy@datstheone.com</a>.
+            <a className="underline" href="mailto:info@datstheone.com">info@datstheone.com</a>.
             We will respond within 30 days.
           </p>
 
