@@ -82,7 +82,7 @@ export const COPY = {
       city: "Montréal, Québec, Canada",
       privacy: "Politique de confidentialité",
       rights: "DatsTheOne® 2026 — Tous droits réservés",
-      sub: "Montréal · 2026",
+      sub: "​",
     },
   },
   en: {
